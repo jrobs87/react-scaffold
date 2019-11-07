@@ -1,0 +1,38 @@
+/* google font import */
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Jomolhari&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amiri&display=swap');
+
+html {
+  font-size: 1em;
+}
+
+body {
+  margin: 0;
+  /* font-family: 'Quicksand', sans-serif; */
+  /* font-family: 'Jomolhari', serif; */
+  /* font-family: 'Crimson Text', serif; */
+  font-family: 'Amiri', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  /* max-height: 100vh; */
+  background: #FDFFFC;
+  /* padding: 1em;  */
+  /* overflow: hidden; */ 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* important to remove the reactstrap */
+.btn:focus {
+  outline: none !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+

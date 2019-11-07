@@ -1,0 +1,105 @@
+.nav-icon-item {
+    position: fixed;
+    z-index: 500;
+    top: 3em;
+    right: 4em;
+    border: 2px solid #F6511D;
+    width: 4em;
+    padding: 0.33em 0.33em 0.11em 0.33em;
+    transition-duration: 0.33s;
+    height: 2em;
+    width: 2em;
+    border-radius: 4em
+    /* font-size: .92em; */
+}
+
+.nav-icon-item:hover {
+    background: #F6511D;
+    color: #FDFFFC;
+    /* opacity: 0.88; */
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.nav-modal {
+    opacity: 0;
+    background: white;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition-property: opacity;
+    transition-duration: 0.26s;
+    transition-delay: 0s;
+    will-change: opacity;
+    z-index: 500;
+    pointer-events: none;
+}
+
+.nav-modal-active {
+    opacity: 0.7;
+    pointer-events: all;
+}
+
+.nav-menu {
+    text-align: center;
+    background: #071013;
+    height: 100vh;
+    width: 280px;
+    position: fixed;
+    /* right: -280px; */
+    transform: translateX(280px);
+    -webkit-transform: translateX(280px);
+    will-change: transform;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    padding: 100px 3em;
+    text-align: right;
+    /* transition-delay: 0.11s; */
+    transition-duration: 0.33s;
+    transition-timing-function: cubic-bezier(0.44, 0, 0, 1);
+}
+
+.nav-menu-active {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+}
+
+.link {
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.55s;
+    right: 2em;
+    position: absolute;
+    will-change: opacity;
+}
+
+.link-active {
+    opacity: 1;
+    /* transform: translateX(-1em); */
+}
+
+.link-menu {
+    text-decoration: none;
+    color: #FDFFFC;
+    font-size: 2em;
+    opacity: 0.55;
+    margin: .33em;
+    padding: 0;
+    transition-property: transform, opacity;
+    transition: 0.33s;
+    display: block;
+}
+
+.link-menu:hover {
+    opacity: 1;
+    transform: translateX(-0.1em) scale(1.02);
+    text-decoration: none;
+    color: #FDFFFC;
+}
+
+ul {
+    list-style-type: none;
+}
