@@ -1,19 +1,23 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import img from './imgs/404panda.png';
 
 function NotFound() {
-    const style={
-        paddingTop: '10em',
-        width: '100%',
-        height: '100vh'
+    const style = {
+        main: {
+            paddingTop: '1em',
+            width: '100%',
+            height: '100vh',
+            fontSize: '13em',
+        }
       }
 
     return (
-        <Container style={ style }>
+        <Container style={ style.main }>
             <Row>
                 <Col>
-                    <h1>404</h1>
-                    <p>You have reached the singularity!</p>
+                <img src={ img } alt="panda" style={{ height: '0.5em'}}></img>
+                    404
                 </Col>
             </Row>
         </Container>
