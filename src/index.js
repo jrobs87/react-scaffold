@@ -11,21 +11,25 @@ import './index.css';
 // Import Router.
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-// Import Components.
+// Import Routes (pages).
 import RouteZero from './routes/RouteZero';
 import RouteOne from './routes/RouteOne';
 import RouteTwo from './routes/RouteTwo';
 import NotFound from './routes/NotFound';
+import RouteAPI from './routes/RouteAPI';
 import RouteIndex from './routes/RouteIndex';
-import CustomNavNF from './components/Nav';
+
+// Import Components.
+import Nav from './components/Nav';
 
 const routing = (   
     <Router>
-    <CustomNavNF />
+    <Nav />
         <Switch>
             <Route exact path='/' component={ RouteZero } />
             <Route path='/route-1' component={ RouteOne } />
             <Route path='/route-2' component={ RouteTwo } />
+            <Route path='/route-api' component={ RouteAPI } />
             <Route path='/route-index' component={ RouteIndex } />
             <Route component={ NotFound } />
         </Switch>

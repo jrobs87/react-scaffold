@@ -8,7 +8,7 @@ function RouteIndex() {
     console.log("Rendered path '/' - RouteIndex.")
     return (
         <Fade duration={333} delay={333}>
-            <Container fluid={false} className="page">
+            <Container fluid={false} className="page-wrapper">
                 <Row>
                     <Col>
                         <h1>App Index</h1>
@@ -30,6 +30,9 @@ function RouteIndex() {
                             </li>
                             <li>
                                 <NavLink to='/route-index'>Route - Index</NavLink>
+                            </li>
+                            <li>
+                            <NavLink to='/route-api'>Route - API</NavLink>
                             </li>
                             <li>
                                 <NavLink to='/notfound'>Route - 404</NavLink>

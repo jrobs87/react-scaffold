@@ -1,21 +1,20 @@
 .nav-icon-item {
     position: fixed;
     z-index: 500;
-    top: 3em;
+    top: 2em;
     right: 3em;
-    border: 1px solid #F45B69;
+    border: 1px solid #292F36;
     width: 4em;
     padding: 0.33em 0.33em 0.11em 0.33em;
     transition-duration: 0.33s;
     height: 2em;
     width: 2em;
-    border-radius: 4em
-    /* font-size: .92em; */
+    border-radius: 4em;
 }
 
 .nav-icon-item:hover {
     cursor: pointer;
-    border: 1px dashed #F45B69;
+    border: 1px dashed #6E2594;
     animation: rotation 3s infinite linear;
 }
 
@@ -37,28 +36,27 @@
     right: 0;
     top: 0;
     transition-property: opacity;
-    transition-duration: 0.26s;
-    transition-delay: 0s;
+    transition-duration: 0.33s;
     will-change: opacity;
     z-index: 500;
     pointer-events: none;
 }
 
 .nav-modal-active {
-    opacity: 0.7;
+    opacity: 0.8;
     pointer-events: all;
 }
 
-.nav-menu {
+.nav-container {
     text-align: center;
-    background: #222222;
+    background: #292F36;
     height: 100vh;
-    width: 180px;
+    width: 220px;
     position: fixed;
-    right: -180px;
+    right: -220px;
     top: 0;
     z-index: 1000;
-    padding: 100px 3em; 
+    padding: 100px 2em; 
     will-change: transform;
     -webkit-transition: all 333ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
     -moz-transition: all 333ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
@@ -70,28 +68,36 @@
     transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
-.nav-menu-active {
-    transform: translateX(-180px);
-    -webkit-transform: translateX(-180px);
+.nav-container-active {
+    transform: translateX(-220px);
+    -webkit-transform: translateX(-220px);
 }
 
-.link {
+.nav-menu {
     opacity: 0;
-    transition-delay: 0.2s;
-    transition-duration: 0.55s;
+    transition-delay: 0.33s;
+    transition-duration: 0.33s;
     left: 2em;
     position: absolute;
     will-change: opacity;
+    text-align: left;
 }
 
-.link-active {
+.nav-menu-active {
     opacity: 1;
 }
 
-.link-menu {
+.nav-logo {
+    color: #FFFFFF;
+    border-bottom: 2px solid #CEFF1A;
+    margin-bottom: 1em;
+    font-size: 2em;
     font-weight: 700;
-    font-size: 1.22em;
-    text-align: left;
+}
+
+.nav-link {
+    font-weight: 700;
+    
     text-decoration: none;
     color: #FFFFFF;
     opacity: 0.55;
@@ -100,19 +106,16 @@
     transition-property: opacity;
     transition-duration: 0.33s;
     display: block;
+    will-change: opacity;
 }
 
-.link-menu:hover {
+.nav-link:hover {
     opacity: 1;
     text-decoration: none;
     color: #FFFFFF;
 }
 
-ul {
-    list-style-type: none;
-}
-
 .link-active-route {
-    color: #F45B69;
+    color: #CEFF1A;
     opacity: 1;
   }

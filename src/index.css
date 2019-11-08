@@ -9,7 +9,7 @@ code {
 html {
   /* set units here for future scaling with em and rem */
   background: #FFFFFF;
-  color: #222222;
+  color: #292F36;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #1C5D99;
+  color: black;
 }
 
 /* needed to remove the reactstrap focus - can always be re-enabled for accessibility */
@@ -30,7 +30,11 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: none !important;
 }
 
-.page {
+.btn:hover {
+  cursor: pointer;
+}
+
+.page-wrapper {
   padding-top: 6em;
 }
 
