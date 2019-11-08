@@ -1,37 +1,37 @@
-// Import React + ReactDOM
+// Import React + ReactDOM.
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// import bootstrap
+// Import Bootstrap basic styling (additional Bootstrap themes can be integrated here).
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// Import style sheets
+// Import stylesheets.
 import './index.css';
 
-// Import Router
+// Import Router.
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-// Import Components
-import Home from './Home';
-import RouteOne from './RouteOne';
-import RouteTwo from './RouteTwo';
-import NotFound from './NotFound';
-import ToDo from './ToDo';
-import CustomNavNF from './NavCustomRefactor';
+// Import Components.
+import RouteZero from './routes/RouteZero';
+import RouteOne from './routes/RouteOne';
+import RouteTwo from './routes/RouteTwo';
+import NotFound from './routes/NotFound';
+import RouteIndex from './routes/RouteIndex';
+import CustomNavNF from './components/Nav';
 
 const routing = (   
     <Router>
     <CustomNavNF />
         <Switch>
-            <Route exact path='/' component={ Home } />
+            <Route exact path='/' component={ RouteZero } />
             <Route path='/route-1' component={ RouteOne } />
             <Route path='/route-2' component={ RouteTwo } />
-            <Route path='/todo' component={ ToDo } />
+            <Route path='/route-index' component={ RouteIndex } />
             <Route component={ NotFound } />
         </Switch>
     </Router>
 )
 
-// Call the render DOM method to render the app - entry point to HTML
+// Call the render DOM method to render the app - entry point to HTML.
 ReactDOM.render(routing, document.getElementById('root'));
 

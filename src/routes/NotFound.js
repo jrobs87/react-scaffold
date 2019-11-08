@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import img from './imgs/404panda.png';
 
 function NotFound() {
     const style = {
@@ -16,7 +15,6 @@ function NotFound() {
         <Container style={ style.main }>
             <Row>
                 <Col>
-                <img src={ img } alt="panda" style={{ height: '0.5em'}}></img>
                     404
                 </Col>
             </Row>
