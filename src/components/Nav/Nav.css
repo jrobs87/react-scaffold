@@ -89,6 +89,8 @@
 }
 
 .link-menu {
+    font-weight: 700;
+    font-size: 1.22em;
     text-align: left;
     text-decoration: none;
     color: #FFFFFF;

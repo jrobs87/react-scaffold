@@ -2,20 +2,12 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
 function NotFound() {
-    const style = {
-        main: {
-            paddingTop: '1em',
-            width: '100%',
-            height: '100vh',
-            fontSize: '13em',
-        }
-      }
-
     return (
-        <Container style={ style.main }>
+        <Container className="page">
             <Row>
                 <Col>
-                    404
+                    <h1>404</h1>
+                    <p>Route for missing links (Router Switch).</p>
                 </Col>
             </Row>
         </Container>

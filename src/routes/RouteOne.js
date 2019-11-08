@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Fade } from 'react-reveal';
-import img from '../imgs/ocean.jpg'
 
 function RouteOne() {
     return (
