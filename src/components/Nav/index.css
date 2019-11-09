@@ -1,15 +1,16 @@
 .nav-icon-item {
     position: fixed;
     z-index: 500;
-    top: 2em;
-    right: 3em;
+    top: 4%;
+    right: 4%;
     border: 1px solid #292F36;
     width: 4em;
-    padding: 0.33em 0.33em 0.11em 0.33em;
+    padding: 0.18em 0.38em 0.11em 0.33em;
     transition-duration: 0.33s;
     height: 2em;
     width: 2em;
     border-radius: 4em;
+    text-align: center;
 }
 
 .nav-icon-item:hover {

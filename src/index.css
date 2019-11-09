@@ -22,6 +22,12 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
 }
 
+.btn {
+  transition-property: all;
+  transition-duration: 0.33s;
+  -moz-transition-duration: 0.33s;
+}
+
 /* needed to remove the reactstrap focus - can always be re-enabled for accessibility */
 .btn:focus {
   outline: none !important;
@@ -32,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn:hover {
   cursor: pointer;
+  filter: invert(0.05);
 }
 
 .page-wrapper {

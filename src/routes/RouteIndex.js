@@ -5,19 +5,24 @@ import { NavLink } from "react-router-dom";
 
 // First of four page template routes.
 function RouteIndex() {
-    console.log("Rendered path '/' - RouteIndex.")
+    console.log("Rendered path '/route-index' - RouteIndex.")
     return (
         <Fade duration={333} delay={333}>
             <Container fluid={false} className="page-wrapper">
                 <Row>
                     <Col>
                         <h1>App Index</h1>
-                        <p>Index of all Routes and Components</p>
+                        <h3>Index of all Routes and Components</h3>
+                        <br />
+                        <p>Routes are equivalent to pages in client side routing. 
+                        Components make up different UI features within each Route. 
+                        Note that each page contains a root div with the class "page-wrapper" - this is a base class for all pages found in src/index.css.</p>
                     </Col>
                 </Row>
+                <br />
                 <Row>
                     <Col lg={4}>
-                        <h3>Routes</h3>
+                        <h4>Routes</h4>
                         <ul>
                             <li>
                                 <NavLink to='/' exact >Route - Zero</NavLink>
@@ -32,7 +37,7 @@ function RouteIndex() {
                                 <NavLink to='/route-index'>Route - Index</NavLink>
                             </li>
                             <li>
-                            <NavLink to='/route-api'>Route - API</NavLink>
+                                <NavLink to='/route-api'>Route - API</NavLink>
                             </li>
                             <li>
                                 <NavLink to='/notfound'>Route - 404</NavLink>
@@ -40,7 +45,7 @@ function RouteIndex() {
                         </ul>
                     </Col>
                     <Col lg={4}>
-                        <h3>Components</h3>
+                        <h4>Components</h4>
                     </Col>
                 </Row>
             </Container>

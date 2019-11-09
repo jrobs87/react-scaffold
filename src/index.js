@@ -15,7 +15,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import RouteZero from './routes/RouteZero';
 import RouteOne from './routes/RouteOne';
 import RouteTwo from './routes/RouteTwo';
-import NotFound from './routes/NotFound';
+import RouteNotFound from './routes/RouteNotFound';
 import RouteAPI from './routes/RouteAPI';
 import RouteIndex from './routes/RouteIndex';
 
@@ -31,7 +31,7 @@ const routing = (
             <Route path='/route-2' component={ RouteTwo } />
             <Route path='/route-api' component={ RouteAPI } />
             <Route path='/route-index' component={ RouteIndex } />
-            <Route component={ NotFound } />
+            <Route component={ RouteNotFound } />
         </Switch>
     </Router>
 )
