@@ -7,18 +7,22 @@ class RouteAPI extends Component {
         data: {}
     }
 
+    // API configuration
     apiKey = '65f442d2887f1b26eb19ee6075e6da55';
     url = `http://api.openweathermap.org/data/2.5/weather?q=Atlanta,us&APPID=${this.apiKey}`;
 
+    // style for failed API call
     style = {
         color: 'red'
     }
 
+    // Proper capitalization for API response data
     properCase = function () {
         const string = this.state.data.weather[0].description;
         return string[0].toUpperCase() + string.slice(1);
     }
 
+    // API call in componentDidMount lifecycle method (best practice)
     componentDidMount() {
         fetch(this.url)
             .then(res => res.json())
@@ -26,20 +30,22 @@ class RouteAPI extends Component {
                 this.setState({
                     data: data
                 });
-                console.log(data)
                 if (data.cod === 401) console.log("Rendered path '/route-api' - RouteAPI (w/o data).");
+                // console.log(data);
             })
             .catch(error => {
-                console.log("Rendered path '/route-api' - RouteAPI (w/o data).")
-                console.log(error)
+                console.log("Rendered path '/route-api' - RouteAPI (w/o data).");
+                console.log(error);
             })
     }
 
     render() {
+        // conditionally render based on API response validation
         if (this.state.data.cod === 401 || this.state.data.main === undefined) {
+            // render if API response fails
             return (
-                <Fade duration={333} delay={333}>
-                    <div className="page-wrapper">
+                <div className="page-wrapper">
+                    {/* <Fade duration={0} delay={0}> */}
                         <Container>
                             <Row>
                                 <Col>
@@ -52,14 +58,15 @@ class RouteAPI extends Component {
                                 </Col>
                             </Row>
                         </Container>
-                    </div>
-                </Fade>
+                    {/* </Fade> */}
+                </div>
             )
         } else {
-            console.log("Rendered path '/route-api' - RouteAPI (with data).")
+            console.log("Rendered path '/route-api' - RouteAPI (with data).");
+            // render if API response succeeds
             return (
                 <div className="page-wrapper">
-                    <Fade duration={ 333 } delay={ 333 }>
+                    {/* <Fade duration={0} delay={0}> */}
                         <Container>
                             <Row>
                                 <Col>
@@ -71,7 +78,7 @@ class RouteAPI extends Component {
                                 </Col>
                             </Row>
                         </Container>
-                    </Fade>
+                    {/* </Fade> */}
                 </div>
             )
         }

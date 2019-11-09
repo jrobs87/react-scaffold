@@ -23,18 +23,19 @@ class Nav extends Component {
             <div>
                 <div className={this.state.active ? "nav-modal-active nav-modal" : "nav-modal"} onClick={this.toggle}>
                     {/* Empty Nav Modal - click to close Nav in active state. */}
+                    Nav Modal
                 </div>
                 <nav className={this.state.active ? "nav-container-active nav-container" : "nav-container"}>
                     <div className={this.state.active ? "nav-menu-active nav-menu" : "nav-menu"}>
-                        <div className="nav-logo">Nav Logo</div>
+                        <div className="nav-logo">Nav Brand</div>
                         <nav >
-                            <NavLink onClick={this.toggle} className="nav-link" activeClassName="link-active-route" to='/' exact >Route - Home</NavLink>
-                            <NavLink onClick={this.toggle} className="nav-link" activeClassName="link-active-route" to='/route-1'>Route - One</NavLink>
-                            <NavLink onClick={this.toggle} className="nav-link" activeClassName="link-active-route" to='/route-2'>Route - Two</NavLink>
-                            <NavLink onClick={this.toggle} className="nav-link" activeClassName="link-active-route" to='/route-api'>Route - API</NavLink>
-                            <NavLink onClick={this.toggle} className="nav-link" activeClassName="link-active-route" to='/notfound'>Route - 404</NavLink>
+                            <NavLink onClick={this.toggle} className="nav-link" activeClassName="nav-link-active" to='/' exact >Route - Home</NavLink>
+                            <NavLink onClick={this.toggle} className="nav-link" activeClassName="nav-link-active" to='/route-1'>Route - One</NavLink>
+                            <NavLink onClick={this.toggle} className="nav-link" activeClassName="nav-link-active" to='/route-2'>Route - Two</NavLink>
+                            <NavLink onClick={this.toggle} className="nav-link" activeClassName="nav-link-active" to='/route-api'>Route - API</NavLink>
+                            <NavLink onClick={this.toggle} className="nav-link" activeClassName="nav-link-active" to='/notfound'>Route - 404</NavLink>
                             <br />
-                            <NavLink onClick={this.toggle} className="nav-link" activeClassName="link-active-route" to='/route-index'>Route - Index</NavLink>
+                            <NavLink onClick={this.toggle} className="nav-link" activeClassName="nav-link-active" to='/route-index'>Route - Index</NavLink>
                         </nav>
                     </div>
                 </nav>

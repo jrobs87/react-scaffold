@@ -1,5 +1,13 @@
+/* ===== READ ME! MAIN STYLE FOR THEME/APP ===== ===== ===== ===== ===== ===== === */
+/* index.css is used for primary styling for the overall theme.  Styles could also
+later be applied as a theme using React Context.  Individual pages (Routes) &
+Components should be placed in their own directories with stylesheets for each. */
+/* ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== = */
+
 /* Import Google Fonts here. */
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+/* ----- Begin base styles for html tags ----- --- */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -7,8 +15,8 @@ code {
 }
 
 html {
-  /* set units here for future scaling with em and rem */
-  background: #FFFFFF;
+  /* set units here for future scaling with em and rem */ 
+  background: #292F36;
   color: #292F36;
 }
 
@@ -20,15 +28,23 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: black;
+  font-weight: 700;
 }
 
+/* ----- End base styles for html tags ----- ----- */
+
+
+/* ===== Begin Custom Classes ===== */
+
+/* ----- Base button styling ----- */
 .btn {
   transition-property: all;
   transition-duration: 0.33s;
   -moz-transition-duration: 0.33s;
 }
 
-/* needed to remove the reactstrap focus - can always be re-enabled for accessibility */
+/* ----- Base button focus styling ----- */
+/* ----- needed to remove the reactstrap focus - re-enable for accessibility ----- */
 .btn:focus {
   outline: none !important;
   border: none !important;
@@ -36,12 +52,17 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: none !important;
 }
 
+/* ----- Base button hover styling ----- */
 .btn:hover {
   cursor: pointer;
   filter: invert(0.05);
 }
 
+/* ----- Generic base styling for pages (Routes) ----- */
 .page-wrapper {
   padding-top: 6em;
+  background: lightgrey;
+  min-height: 100vh;
 }
 
+/* ===== End Custom Classes ===== */

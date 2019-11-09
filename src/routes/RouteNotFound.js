@@ -27,7 +27,7 @@ const button = {
 function RouteNotFound() {
     console.log("Rendered path '/not-found' - RouteNotFound.");
     return (
-        <Fade duration={333} delay={333}>
+        // <Fade duration={0} delay={0}>
             <div className="page-wrapper" style={style.page}>
                 <Container>
                     <Row>
@@ -52,7 +52,7 @@ function RouteNotFound() {
                     </Row>
                 </Container>
             </div>
-        </Fade>
+        // </Fade>
     )
 }
 

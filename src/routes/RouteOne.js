@@ -6,7 +6,7 @@ function RouteOne() {
     console.log("Rendered path '/route-1' - RouteOne.");
     return (
         <div className="page-wrapper">
-            <Fade duration={333} delay={333}>
+            <Fade duration={0} delay={0}>
                 <Container fluid={false}>
                     <Row>
                         <Col lg={6}>

@@ -6,7 +6,7 @@ function RouteTwo() {
     console.log("Rendered path '/route-2' - RouteTwo.");
     return (
         <div className="page-wrapper">
-            <Fade duration={333} delay={333}>
+            <Fade duration={0} delay={0}>
                 <Container>
                     <Row>
                         <Col lg={6}>

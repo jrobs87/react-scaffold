@@ -3,70 +3,63 @@
     z-index: 500;
     top: 4%;
     right: 4%;
-    border: 1px solid #292F36;
     width: 4em;
-    padding: 0.18em 0.38em 0.11em 0.33em;
+    padding-top: 0.16%;
     transition-duration: 0.33s;
     height: 2em;
     width: 2em;
     border-radius: 4em;
     text-align: center;
+    border: 2px dashed #292F36;
+    font-weight: 700;
 }
 
 .nav-icon-item:hover {
     cursor: pointer;
-    border: 1px dashed #6E2594;
-    animation: rotation 3s infinite linear;
+    transform: scale(1.1);
+    background: #292F36;
+    color: white;
 }
-
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
 
 .nav-modal {
     opacity: 0;
-    background: #FFFFFF;
+    background: lightgrey;
     height: 100vh;
     width: 100%;
     position: fixed;
     right: 0;
     top: 0;
     transition-property: opacity;
-    transition-duration: 0.33s;
+    transition-duration: 0.22s;
     will-change: opacity;
     z-index: 500;
     pointer-events: none;
+    text-align: center;
+    padding: 20% 280px 0 0;
+    color: rgba(255, 255, 255, 0.163);
+    font-size: 3em;
 }
 
 .nav-modal-active {
-    opacity: 0.8;
+    opacity: 1;
     pointer-events: all;
 }
 
 .nav-container {
-    text-align: center;
     background: #292F36;
     height: 100vh;
+    padding: 100px 2em; 
     width: 220px;
     position: fixed;
     right: -220px;
     top: 0;
     z-index: 1000;
-    padding: 100px 2em; 
+    text-align: center;
     will-change: transform;
-    -webkit-transition: all 333ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    -moz-transition: all 333ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    -o-transition: all 333ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    transition: all 333ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    -moz-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    -o-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(.02,.55,.35,.99);
+   -moz-transition-timing-function:  cubic-bezier(.02,.55,.35,.99);
+    transition-duration: 0.22s;
 }
 
 .nav-container-active {
@@ -76,7 +69,7 @@
 
 .nav-menu {
     opacity: 0;
-    transition-delay: 0.33s;
+    transition-delay: 0.22s;
     transition-duration: 0.33s;
     left: 2em;
     position: absolute;
@@ -98,12 +91,11 @@
 
 .nav-link {
     font-weight: 700;
-    
     text-decoration: none;
     color: #FFFFFF;
     opacity: 0.55;
     margin: 0;
-    padding: 0;
+    padding: 0 !important;
     transition-property: opacity;
     transition-duration: 0.33s;
     display: block;
@@ -116,7 +108,7 @@
     color: #FFFFFF;
 }
 
-.link-active-route {
+.nav-link-active {
     color: #CEFF1A;
     opacity: 1;
   }
