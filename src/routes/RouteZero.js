@@ -15,7 +15,7 @@ function RouteZero() {
 
   return (
     <div className="page-wrapper">
-      <Fade duration={0} delay={0}>
+      {/* <Fade duration={333} delay={111}> */}
         <Container fluid={false}>
           <Row>
             <Col lg={6}>
@@ -23,7 +23,7 @@ function RouteZero() {
               <h3>App Entry Point</h3>
               <br />
               <p>Root route for the application serving as the homepage.
-                Change the Component name and config in the index.js file (found in the React Router component).</p>
+                Change the Component name and config in the index.js file (found in the Router component).</p>
               <Link to='/route-index'>
                 <Button className='btn' style={button}>
                   App Index
@@ -32,7 +32,7 @@ function RouteZero() {
             </Col>
           </Row>
         </Container>
-      </Fade>
+      {/* </Fade> */}
     </div>
   );
 }
