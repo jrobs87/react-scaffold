@@ -30,7 +30,7 @@
 
 .nav-modal {
     opacity: 0;
-    background: #292F36;
+    background: rgba(27, 27, 30, 0.774);
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -52,9 +52,9 @@
 
 .modal-text {
     animation: rotation 90s infinite linear;
-    color: rgba(205, 255, 26, 0.4);
+    color: rgba(246, 70, 64, 0.75);
     font-size: 4em;
-    border: 0.02em dashed rgba(144, 163, 75, 0.4);
+    border: 0.02em dashed rgba(246, 70, 64, 0.75);
     width: 6em;
     height: 6em;
     border-radius: 100%;
@@ -72,7 +72,7 @@
   }
 
 .nav-container {
-    background: rgba(41, 47, 54, 0.9);
+    background: #1B1B1E;
     height: 100vh;
     padding: 100px 2em; 
     width: 220px;
@@ -137,7 +137,7 @@
 }
 
 .nav-link-active {
-    color: #CEFF1A;
+    color: #F64740;
     opacity: 1;
   }
 

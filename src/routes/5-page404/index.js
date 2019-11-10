@@ -2,16 +2,14 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal';
-import img from '../../imgs/giraffe.jpg';
+// import img from '../../imgs/giraffe.jpg';
+import img from '../../imgs/cat.jpg';
 
 const style = {
     page: {
-        // backgroundImage: `url(${img})`,
         background: '#292F36',
-        // backgroundSize: 'cover',
-        // backgroundPosition: 'right',
         minHeight: '100vh',
-        color: 'white',
+        color: '#1B1B1E',
         paddingTop: 0
     },
     pageInner: {
@@ -19,26 +17,20 @@ const style = {
         minHeight: '100vh',
         backgroundSize: 'cover',
         backgroundPosition: 'right',
-        paddingTop: '6em'
+        paddingTop: '6em',
     },
     header: {
-        color: 'white'
+        color: '#1B1B1E'
     }
-}
-
-const button = {
-    background: 'white',
-    color: 'black',
-    border: '1px solid white',
-    marginRight: '1em'
 }
 
 function RouteNotFound() {
     console.log("Rendered path '/not-found' - RouteNotFound.");
     return (
         <div className="page-wrapper" style={style.page}>
-            <Fade duration={111} delay={111}>
+            
                 <div style={style.pageInner}>
+                <Fade duration={222} delay={222}>
                     <Container>
                         <Row>
                             <Col lg={6}>
@@ -49,20 +41,21 @@ function RouteNotFound() {
                                     See Nav Component for the React Router configuration.</p>
                                 <br />
                                 <Link to='/'>
-                                    <Button className='btn' style={button}>
+                                    <Button className='btn'>
                                         Homepage
                                 </Button>
                                 </Link>
                                 <Link to='/route-index'>
-                                    <Button className='btn' style={button}>
+                                    <Button className='btn'>
                                         App Index
                                 </Button>
                                 </Link>
                             </Col>
                         </Row>
                     </Container>
+                    </Fade>
                 </div>
-            </Fade>
+            
         </div>
     )
 }

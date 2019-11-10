@@ -10,12 +10,6 @@ import img from '../../imgs/giraffe.jpg';
 function RouteZero() {
   console.log("Rendered path '/' - RouteZero.");
 
-  const button = {
-    background: '#6E2594',
-    color: 'white',
-    border: '1px solid #6E2594'
-  }
-
   // hidden preloader div styling
   const preloader = {
       display: 'none'
@@ -33,7 +27,7 @@ function RouteZero() {
               <p>Root route for the application serving as the homepage.
                 Change the Component name and config in the index.js file (found in the Router component).</p>
               <Link to='/route-index'>
-                <Button className='btn' style={button}>
+                <Button className='btn'>
                   App Index
                   </Button>
               </Link>

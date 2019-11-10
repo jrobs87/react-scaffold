@@ -6,13 +6,6 @@ import { Fade } from 'react-reveal';
 function RouteOne() {
     console.log("Rendered path '/route-1' - RouteOne.");
 
-    const button = {
-        background: '#6E2594',
-        color: 'white',
-        border: '1px solid #6E2594',
-        marginRight: '1em'
-    }
-
     return (
         <div className="page-wrapper">
             <Fade duration={222} delay={222}>
@@ -28,12 +21,12 @@ function RouteOne() {
                     <Row>
                         <Col>
                             <Link to='/'>
-                                <Button className='btn' style={button}>
+                                <Button className='btn'>
                                     Homepage
                                  </Button>
                             </Link>
                             <Link to='/route-index'>
-                                <Button className='btn' style={button}>
+                                <Button className='btn'>
                                     App Index
                                 </Button>
                             </Link>

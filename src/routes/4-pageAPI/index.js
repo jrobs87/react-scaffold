@@ -40,13 +40,6 @@ class RouteAPI extends Component {
             })
     }
 
-    button = {
-        background: '#6E2594',
-        color: 'white',
-        border: '1px solid #6E2594',
-        marginRight: '1em'
-    }
-
     render() {
         // conditionally render based on API response validation
         if (this.state.data.cod === 401 || this.state.data.main === undefined) {
@@ -85,12 +78,12 @@ class RouteAPI extends Component {
                         <Row>
                             <Col>
                                 <Link to='/'>
-                                    <Button className='btn' style={this.button}>
+                                    <Button className='btn'>
                                         Homepage
                                  </Button>
                                 </Link>
                                 <Link to='/route-index'>
-                                    <Button className='btn' style={this.button}>
+                                    <Button className='btn'>
                                         App Index
                                 </Button>
                                 </Link>
