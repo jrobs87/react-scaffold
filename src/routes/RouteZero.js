@@ -3,6 +3,9 @@ import { Container, Row, Col, Button } from "reactstrap";
 import { Link } from 'react-router-dom';
 import Fade from "react-reveal/Fade";
 
+// preloading img for 404
+import img from '../imgs/giraffe.jpg';
+
 // Homepage template.
 function RouteZero() {
   console.log("Rendered path '/' - RouteZero.");
@@ -11,6 +14,11 @@ function RouteZero() {
     background: '#6E2594',
     color: 'white',
     border: '1px solid #6E2594'
+  }
+
+  // hidden preloader div styling
+  const preloader = {
+      display: 'none'
   }
 
   return (
@@ -33,6 +41,10 @@ function RouteZero() {
           </Row>
         </Container>
       </Fade>
+
+      <div style={preloader}>
+        <img src={ img } alt="giraffe"></img>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 
@@ -7,12 +7,12 @@ import Fade from "react-reveal/Fade";
 function RouteIndex() {
     console.log("Rendered path '/route-index' - RouteIndex.");
 
-    const button = {
-        background: '#6E2594',
-        color: 'white',
-        border: '1px solid #6E2594',
-        marginRight: '1em'
-    }
+    // const button = {
+    //     background: '#6E2594',
+    //     color: 'white',
+    //     border: '1px solid #6E2594',
+    //     marginRight: '1em'
+    // }
 
     return (
         <div className="page-wrapper">
@@ -38,11 +38,18 @@ function RouteIndex() {
                                 <li> <Link to='/route-2'>Route - Two</Link> </li>
                                 <li><Link to='/route-api'>Route - API</Link> </li>
                                 <li> <Link to='/notfound'>Route - 404</Link> </li>
-                                <li> <Link to='/route-index'>Route - Index</Link> </li>
+                                <li>Route - Index</li>
                             </ul>
                         </Col>
                         <Col lg={4}>
                             <h4>Components</h4>
+                        </Col>
+                        <Col lg={4}>
+                            <h4>Future Improvements</h4>
+                            <ul>
+                                <li>Global State (React Context)</li>
+                                <li>Node / Express Server</li>
+                            </ul>
                         </Col>
                     </Row>
                 </Container>
