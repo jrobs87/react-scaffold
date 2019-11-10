@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal';
-import img from '../imgs/giraffe.jpg';
+import img from '../../imgs/giraffe.jpg';
 
 const style = {
     page: {
@@ -27,8 +27,9 @@ const button = {
 function RouteNotFound() {
     console.log("Rendered path '/not-found' - RouteNotFound.");
     return (
-        <Fade duration={0} delay={0}>
-            <div className="page-wrapper" style={style.page}>
+
+        <div className="page-wrapper" style={style.page}>
+            <Fade duration={0} delay={0}>
                 <Container>
                     <Row>
                         <Col lg={6}>
@@ -51,8 +52,9 @@ function RouteNotFound() {
                         </Col>
                     </Row>
                 </Container>
-            </div>
-        </Fade>
+            </Fade>
+        </div>
+
     )
 }
 

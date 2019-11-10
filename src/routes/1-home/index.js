@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Fade from "react-reveal/Fade";
 
 // preloading img for 404
-import img from '../imgs/giraffe.jpg';
+import img from '../../imgs/giraffe.jpg';
 
 // Homepage template.
 function RouteZero() {
