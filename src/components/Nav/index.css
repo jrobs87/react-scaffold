@@ -43,6 +43,27 @@
     pointer-events: all;
 }
 
+.modal-text {
+    animation: rotation 20s infinite linear;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 4em;
+    border: 3px dashed rgba(255, 255, 255, 0.2);
+    width: 6em;
+    height: 6em;
+    border-radius: 100%;
+    padding-top: 2.22em;
+    margin: auto;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
 .nav-container {
     background: #292F36;
     height: 100vh;
@@ -111,23 +132,3 @@
     opacity: 1;
   }
 
-  .modal-text {
-    animation: rotation 20s infinite linear;
-    color: rgba(255, 255, 255, 0.2);
-    font-size: 4em;
-    border: 3px dashed rgba(255, 255, 255, 0.2);
-    width: 6em;
-    height: 6em;
-    border-radius: 100%;
-    padding-top: 2.22em;
-    margin: auto;
-  }
-
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }

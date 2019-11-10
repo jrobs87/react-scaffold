@@ -15,7 +15,7 @@ function RouteOne() {
 
     return (
         <div className="page-wrapper">
-            <Fade duration={333} delay={222}>
+            <Fade duration={222} delay={222}>
                 <Container fluid={false}>
                     <Row>
                         <Col lg={6}>
