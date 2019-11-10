@@ -35,9 +35,7 @@
     z-index: 500;
     pointer-events: none;
     text-align: center;
-    padding: 20% 280px 0 0;
-    color: rgba(255, 255, 255, 0.163);
-    font-size: 6em;
+    padding: 13% 220px 0 0;
 }
 
 .nav-modal-active {
@@ -111,4 +109,25 @@
 .nav-link-active {
     color: #CEFF1A;
     opacity: 1;
+  }
+
+  .modal-text {
+    animation: rotation 20s infinite linear;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 4em;
+    border: 3px dashed rgba(255, 255, 255, 0.2);
+    width: 6em;
+    height: 6em;
+    border-radius: 100%;
+    padding-top: 2.22em;
+    margin: auto;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
   }

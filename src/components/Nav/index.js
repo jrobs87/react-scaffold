@@ -6,8 +6,7 @@ class Nav extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            active: false,
-            classList: ['nav-modal']
+            active: false
         }
         this.toggle = this.toggle.bind(this);
     }
@@ -23,7 +22,9 @@ class Nav extends Component {
             <div>
                 <div className={this.state.active ? "nav-modal-active nav-modal" : "nav-modal"} onClick={this.toggle}>
                     {/* Empty Nav Modal - click to close Nav in active state. */}
-                    Nav Modal
+                    <div className="modal-text">
+                        Nav Modal
+                    </div>
                 </div>
                 <nav className={this.state.active ? "nav-container-active nav-container" : "nav-container"}>
                     <div className={this.state.active ? "nav-menu-active nav-menu" : "nav-menu"}>
