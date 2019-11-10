@@ -22,7 +22,7 @@ class Nav extends Component {
             <div>
                 <div className={this.state.active ? "nav-modal-active nav-modal" : "nav-modal"} onClick={this.toggle}>
                     {/* Empty Nav Modal - click to close Nav in active state. */}
-                    <div className="modal-text">
+                    <div className={this.state.active ?  "modal-text-active modal-text" :  "modal-text"}>
                         Nav Modal
                     </div>
                 </div>
