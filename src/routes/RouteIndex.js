@@ -1,17 +1,25 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
+import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
-import { NavLink } from "react-router-dom";
 
 // First of four page template routes.
 function RouteIndex() {
-    console.log("Rendered path '/route-index' - RouteIndex.")
+    console.log("Rendered path '/route-index' - RouteIndex.");
+
+    const button = {
+        background: '#6E2594',
+        color: 'white',
+        border: '1px solid #6E2594',
+        marginRight: '1em'
+    }
+
     return (
         <div className="page-wrapper">
             <Fade duration={0} delay={0} >
                 <Container fluid={false}>
                     <Row>
-                        <Col>
+                        <Col lg={6}>
                             <h1>App Index</h1>
                             <h3>Index of all Routes and Components</h3>
                             <br />
@@ -25,12 +33,12 @@ function RouteIndex() {
                         <Col lg={4}>
                             <h4>Routes (pages)</h4>
                             <ul>
-                                <li><NavLink to='/' exact >Route - Home</NavLink></li>
-                                <li><NavLink to='/route-1'>Route - One</NavLink></li>
-                                <li> <NavLink to='/route-2'>Route - Two</NavLink> </li>
-                                <li><NavLink to='/route-api'>Route - API</NavLink> </li>
-                                <li> <NavLink to='/notfound'>Route - 404</NavLink> </li>
-                                <li> <NavLink to='/route-index'>Route - Index</NavLink> </li>
+                                <li><Link to='/' exact >Route - Home</Link></li>
+                                <li><Link to='/route-1'>Route - One</Link></li>
+                                <li> <Link to='/route-2'>Route - Two</Link> </li>
+                                <li><Link to='/route-api'>Route - API</Link> </li>
+                                <li> <Link to='/notfound'>Route - 404</Link> </li>
+                                <li> <Link to='/route-index'>Route - Index</Link> </li>
                             </ul>
                         </Col>
                         <Col lg={4}>
