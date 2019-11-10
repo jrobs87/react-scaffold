@@ -10,7 +10,7 @@ class RouteAPI extends Component {
 
     // API configuration
     apiKey = '65f442d2887f1b26eb19ee6075e6da55';
-    url = `http://api.openweathermap.org/data/2.5/weather?q=Atlanta,us&APPID=${this.apiKey}`;
+    url = `https://api.openweathermap.org/data/2.5/weather?q=Atlanta,us&APPID=${this.apiKey}`;
 
     // style for failed API call
     style = {
