@@ -6,12 +6,12 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Import Routes (pages).
-import RouteZero from './routes/RouteZero';
-import RouteOne from './routes/RouteOne';
-import RouteTwo from './routes/RouteTwo';
-import RouteNotFound from './routes/RouteNotFound';
-import RouteAPI from './routes/RouteAPI';
-import RouteIndex from './routes/RouteIndex';
+import RouteZero from './routes/1-home';
+import RouteOne from './routes/2-pageOne';
+import RouteTwo from './routes/3-pageTwo';
+import RouteNotFound from './routes/5-page404';
+import RouteAPI from './routes/4-pageAPI';
+import RouteIndex from './routes/6-pageIndex';
 
 // Import Components.
 import Nav from './components/Nav';

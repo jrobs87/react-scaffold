@@ -28,7 +28,7 @@ class Nav extends Component {
                 </div>
                 <nav className={this.state.active ? "nav-container-active nav-container" : "nav-container"}>
                     <div className={this.state.active ? "nav-menu-active nav-menu" : "nav-menu"}>
-                        <div className="nav-logo">Nav Brand</div>
+                        <div className="nav-logo">Nav Logo</div>
                         <nav >
                             <NavLink onClick={this.toggle} className="nav-link" activeClassName="nav-link-active" to='/' exact >Route - Home</NavLink>
                             <NavLink onClick={this.toggle} className="nav-link" activeClassName="nav-link-active" to='/route-1'>Route - One</NavLink>
@@ -40,10 +40,10 @@ class Nav extends Component {
                         </nav>
                     </div>
                 </nav>
-                <div onClick={this.toggle} className="nav-icon">
-                    <div className="nav-icon-item">
+                <div onClick={this.toggle}>
+                    <div className={this.state.active ? "nav-icon-item-active nav-icon-item" : "nav-icon-item"}>
                         {/* Nav Icon Placeholder */}
-                        M
+                        Nav
                     </div>
                 </div>
             </div>

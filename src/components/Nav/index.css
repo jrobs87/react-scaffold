@@ -3,36 +3,43 @@
     z-index: 500;
     top: 4%;
     right: 4%;
-    width: 4em;
-    padding-top: 0.16%;
-    transition-duration: 0.33s;
-    height: 2em;
-    width: 2em;
+    padding: 0.1% 0;
+    transition-duration: 0.22s;
+    height: em;
+    width: 3.5em;
     border-radius: 4em;
     text-align: center;
-    border: 2px dashed #292F36;
-    font-weight: 700;
+    border: 1px solid rgba(41, 47, 54, 0.16);
+    will-change: opacity;
+    text-align: center;
 }
 
 .nav-icon-item:hover {
     cursor: pointer;
-    transform: scale(1.1);
-    background: #292F36;
-    color: white;
+    opacity: 0.8;
+    background: rgba(41, 47, 54, 0.16);
 }
+
+.nav-icon-item-active {
+   opacity: 0;
+}
+
+.nav-icon-item-active:hover {
+    opacity: 0;
+ }
 
 .nav-modal {
     opacity: 0;
-    background: lightgrey;
+    background: #292F36;
     height: 100vh;
     width: 100%;
     position: fixed;
     right: 0;
     top: 0;
     transition-property: opacity;
-    transition-duration: 0.11s;
+    transition-duration: 0.26s;
     will-change: opacity;
-    z-index: 500;
+    z-index: 750;
     pointer-events: none;
     text-align: center;
     padding: 13% 220px 0 0;
@@ -44,10 +51,10 @@
 }
 
 .modal-text {
-    animation: rotation 20s infinite linear;
-    color: rgba(255, 255, 255, 0.2);
+    animation: rotation 90s infinite linear;
+    color: rgba(205, 255, 26, 0.2);
     font-size: 4em;
-    border: 3px dashed rgba(255, 255, 255, 0.2);
+    border: 0.02em dashed rgba(144, 163, 75, 0.4);
     width: 6em;
     height: 6em;
     border-radius: 100%;
@@ -65,7 +72,7 @@
   }
 
 .nav-container {
-    background: #292F36;
+    background: rgba(41, 47, 54, 0.9);
     height: 100vh;
     padding: 100px 2em; 
     width: 220px;
@@ -79,6 +86,7 @@
     transition-timing-function: cubic-bezier(.08,.62,.35,.99);
    -moz-transition-timing-function:  cubic-bezier(.08,.62,.35,.99);
     transition-duration: 0.22s;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-container-active {
@@ -101,11 +109,12 @@
 }
 
 .nav-logo {
-    color: #FFFFFF;
-    border-bottom: 2px solid #CEFF1A;
+    color: #ffffff;
+    /* border-bottom: 2px solid #FFFFFF; */
     margin-bottom: 1em;
     font-size: 2em;
-    font-weight: 700;
+    /* font-weight: 700; */
+    /* opacity: 0.55; */
 }
 
 .nav-link {

@@ -28,7 +28,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: black;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 ul {
@@ -44,8 +44,10 @@ ul {
 /* ----- Base button styling ----- */
 .btn {
   transition-property: all;
-  transition-duration: 0.33s;
-  -moz-transition-duration: 0.33s;
+  transition-duration: 0.11s;
+  -moz-transition-duration: 0.11s;
+  border-radius: 3em;
+  padding: 0.2em 1.33em
 }
 
 /* ----- Base button focus styling ----- */
@@ -60,7 +62,7 @@ ul {
 /* ----- Base button hover styling ----- */
 .btn:hover {
   cursor: pointer;
-  filter: invert(0.05);
+  filter: invert(0.1);
 }
 
 /* ----- Generic base styling for pages (Routes) ----- */
