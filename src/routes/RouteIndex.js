@@ -16,7 +16,7 @@ function RouteIndex() {
 
     return (
         <div className="page-wrapper">
-            <Fade duration={0} delay={0} >
+            <Fade duration={333} delay={222} >
                 <Container fluid={false}>
                     <Row>
                         <Col lg={6}>

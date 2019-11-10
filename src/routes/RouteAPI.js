@@ -53,20 +53,17 @@ class RouteAPI extends Component {
             // render if API response fails
             return (
                 <div className="page-wrapper">
-                    {/* <Fade duration={0} delay={0}> */}
+                    <Fade duration={333} delay={222}>
                     <Container>
                         <Row>
                             <Col>
-                                <h1>Route API</h1>
-                                <h3>Simple API Example</h3>
-                                <br />
                                 <div style={this.style}>
                                     No data available!
                                     </div>
                             </Col>
                         </Row>
                     </Container>
-                    {/* </Fade> */}
+                    </Fade>
                 </div>
             )
         } else {
@@ -74,7 +71,7 @@ class RouteAPI extends Component {
             // render if API response succeeds
             return (
                 <div className="page-wrapper">
-                    {/* <Fade duration={0} delay={0}> */}
+                    <Fade duration={333} delay={222}>
                     <Container>
                         <Row>
                             <Col>
@@ -100,7 +97,7 @@ class RouteAPI extends Component {
                             </Col>
                         </Row>
                     </Container>
-                    {/* </Fade> */}
+                    </Fade>
                 </div>
             )
         }

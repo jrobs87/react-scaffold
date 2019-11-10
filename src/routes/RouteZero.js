@@ -15,7 +15,7 @@ function RouteZero() {
 
   return (
     <div className="page-wrapper">
-      {/* <Fade duration={333} delay={111}> */}
+      <Fade duration={333} delay={222}>
         <Container fluid={false}>
           <Row>
             <Col lg={6}>
@@ -32,7 +32,7 @@ function RouteZero() {
             </Col>
           </Row>
         </Container>
-      {/* </Fade> */}
+      </Fade>
     </div>
   );
 }
