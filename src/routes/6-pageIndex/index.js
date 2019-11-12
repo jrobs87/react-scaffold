@@ -46,10 +46,11 @@ function RouteIndex() {
                         </Col>
                         <Col lg={4}>
                             <h4>Future Improvements</h4>
-                            <ul>
+                            <ol>
                                 <li>Global State (React Context)</li>
                                 <li>Node / Express Server</li>
-                            </ul>
+                                <li>Splash Page / Preloader</li>
+                            </ol>
                         </Col>
                     </Row>
                 </Container>

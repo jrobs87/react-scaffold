@@ -1,13 +1,12 @@
 .nav-icon-item {
     position: fixed;
     z-index: 500;
-    top: 4%;
-    right: 4%;
+    top: 2em;
+    right: 2em;
     padding: 0.1% 0;
     transition-duration: 0.22s;
-    height: em;
-    width: 3.5em;
-    border-radius: 4em;
+    width: 3em;
+    border-radius: 3px;
     text-align: center;
     border: 1px solid rgba(41, 47, 54, 0.16);
     will-change: opacity;
@@ -15,8 +14,7 @@
 }
 
 .nav-icon-item:hover {
-    cursor: pointer;
-    opacity: 0.8;
+    cursor: pointer;;
     background: rgba(41, 47, 54, 0.16);
 }
 
@@ -52,15 +50,18 @@
 
 .modal-text {
     animation: rotation 90s infinite linear;
-    color: rgba(246, 70, 64, 0.75);
+    color: #00A1E4;
     font-size: 4em;
-    border: 0.02em dashed rgba(246, 70, 64, 0.75);
+    border: 0.02em dashed #00A1E4;
     width: 6em;
     height: 6em;
     border-radius: 100%;
     padding-top: 2.22em;
     margin: auto;
+    opacity: 0.75;
   }
+
+  /* 00A1E4 */
 
   @keyframes rotation {
     from {
@@ -110,11 +111,8 @@
 
 .nav-logo {
     color: #ffffff;
-    /* border-bottom: 2px solid #FFFFFF; */
     margin-bottom: 1em;
     font-size: 2em;
-    /* font-weight: 700; */
-    /* opacity: 0.55; */
 }
 
 .nav-link {
@@ -137,7 +135,7 @@
 }
 
 .nav-link-active {
-    color: #F64740;
+    color: #00A1E4;
     opacity: 1;
   }
 

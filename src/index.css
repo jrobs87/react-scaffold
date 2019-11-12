@@ -29,12 +29,19 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #1B1B1E;
-  /* font-weight: 700; */
+}
+
+p {
+  color: #1B1B1E;
 }
 
 ul {
   list-style-type: none;
   padding-left: 0em;
+}
+
+ol {
+  padding-left: 1em;
 }
 
 /* ----- End base styles for html tags ----- ----- */
@@ -47,13 +54,12 @@ ul {
   transition-property: all;
   transition-duration: 0.11s;
   -moz-transition-duration: 0.11s;
-  border-radius: 1em;
+  border-radius: 3px;
   padding: 0.2em 1.11em;
   margin-right: 1em;
-  /* text-transform: uppercase; */
   font-weight: 700;
-  background: #F64740;
-  border: 1px solid #F64740;
+  background: #00A1E4;
+  border: 1px solid #00A1E4;
 }
 
 /* ----- Base button focus styling ----- */
@@ -63,14 +69,15 @@ ul {
   border: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
+  border: 1px solid #00A1E4;
 }
 
 /* ----- Base button hover styling ----- */
 .btn:hover {
   cursor: pointer;
   filter: invert(0.1);
-  background: #F64740;
-  border: 1px solid #F64740;
+  background: #00A1E4;
+  border: 1px solid #00A1E4;
 }
 
 /* ----- Generic base styling for pages (Routes) ----- */

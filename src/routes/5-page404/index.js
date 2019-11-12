@@ -7,9 +7,9 @@ import img from '../../imgs/cat.jpg';
 
 const style = {
     page: {
-        background: '#1B1B1E',
+        background: '#lightgrey',
         minHeight: '100vh',
-        color: '#ffffff', 
+        color: '#1B1B1E', 
         paddingTop: 0
     },
     pageInner: {
