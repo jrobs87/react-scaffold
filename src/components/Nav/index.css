@@ -35,7 +35,7 @@
     right: 0;
     top: 0;
     transition-property: opacity;
-    transition-duration: 0.26s;
+    transition-duration: 0.22s;
     will-change: opacity;
     z-index: 750;
     pointer-events: none;
@@ -49,7 +49,7 @@
 }
 
 .modal-text {
-    animation: rotation 90s infinite linear;
+    animation: rotation 45s infinite linear;
     color: #00A1E4;
     font-size: 4em;
     border: 0.02em dashed #00A1E4;
