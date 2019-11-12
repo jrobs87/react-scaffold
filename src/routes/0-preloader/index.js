@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import { Link } from 'react-router-dom';
 import Fade from "react-reveal/Fade";
+import './index.css';
 
 // preloading img for 404
 import img from '../imgs/giraffe.jpg';
