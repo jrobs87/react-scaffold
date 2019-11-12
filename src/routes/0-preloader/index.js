@@ -16,34 +16,17 @@ function RouteZero() {
     border: '1px solid #6E2594'
   }
 
+  // hello world
   // hidden preloader div styling
   const preloader = {
-      display: 'none'
+    display: 'none'
   }
 
   return (
     <div className="page-wrapper">
-      <Fade duration={222} delay={222}>
-        <Container fluid={false}>
-          <Row>
-            <Col lg={6}>
-              <h1>Preloader</h1>
-              <h3>Load all image assets</h3>
-              <br />
-              <p>Load images into div set to display: none.  Eventually this can all be scripted dynamically wtih js.
-              A loading animation component will eventually be inserted here.</p>
-              <Link to='/route-index'>
-                <Button className='btn' style={button}>
-                  App Index
-                  </Button>
-              </Link>
-            </Col>
-          </Row>
-        </Container>
-      </Fade>
-
+      <h1>Preloader + Spinner</h1>
       <div style={preloader}>
-        <img src={ img } alt="giraffe"></img>
+        <img src={img} alt="giraffe"></img>
       </div>
     </div>
   );
