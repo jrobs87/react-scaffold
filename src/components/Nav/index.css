@@ -5,7 +5,7 @@
     right: 2em;
     padding: 0.1% 0;
     transition-duration: 0.22s;
-    width: 3em;
+    width: 2em;
     border-radius: 3px;
     text-align: center;
     border: 1px solid rgba(41, 47, 54, 0.16);
@@ -61,8 +61,6 @@
     opacity: 0.75;
   }
 
-  /* 00A1E4 */
-
   @keyframes rotation {
     from {
       transform: rotate(0deg);
@@ -97,8 +95,8 @@
 
 .nav-menu {
     opacity: 0;
-    transition-delay: 0.22s;
-    transition-duration: 0.33s;
+    transition-delay: 0.18s;
+    transition-duration: 0.22s;
     left: 2em;
     position: absolute;
     will-change: opacity;

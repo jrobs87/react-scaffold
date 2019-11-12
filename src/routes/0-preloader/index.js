@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 import './index.css';
 
 // preloading img for 404
-import img from '../imgs/giraffe.jpg';
+import img from '../imgs/cat.jpg';
 
 // Homepage template.
 function RouteZero() {
@@ -27,7 +27,7 @@ function RouteZero() {
     <div className="page-wrapper">
       <h1>Preloader + Spinner</h1>
       <div style={preloader}>
-        <img src={img} alt="giraffe"></img>
+        <img src={img} alt="cat"></img>
       </div>
     </div>
   );

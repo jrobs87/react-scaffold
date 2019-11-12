@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Fade } from 'react-reveal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 import './index.css';
 
 class Nav extends Component {
@@ -22,7 +26,7 @@ class Nav extends Component {
             <div>
                 <div className={this.state.active ? "nav-modal-active nav-modal" : "nav-modal"} onClick={this.toggle}>
                     {/* Empty Nav Modal - click to close Nav in active state. */}
-                    <div className={this.state.active ?  "modal-text-active modal-text" :  "modal-text"}>
+                    <div className={this.state.active ? "modal-text-active modal-text" : "modal-text"}>
                         Nav Modal
                     </div>
                 </div>
@@ -41,10 +45,12 @@ class Nav extends Component {
                     </div>
                 </nav>
                 <div onClick={this.toggle}>
-                    <div className={this.state.active ? "nav-icon-item-active nav-icon-item" : "nav-icon-item"}>
-                        {/* Nav Icon Placeholder */}
-                        Nav
-                    </div>
+                    <Fade duration={222} delay={222}>
+                        <div className={this.state.active ? "nav-icon-item-active nav-icon-item" : "nav-icon-item"}>
+                            {/* Nav Icon Placeholder */}
+                            <FontAwesomeIcon icon={faBars} />
+                        </div>
+                    </Fade>
                 </div>
             </div>
         )
