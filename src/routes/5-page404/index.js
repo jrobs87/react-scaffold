@@ -13,10 +13,10 @@ const style = {
         paddingTop: 0
     },
     pageInner: {
-        backgroundImage: `url(${img})`,
-        minHeight: '100vh',
-        backgroundSize: 'cover',
-        backgroundPosition: 'right',
+        // backgroundImage: `url(${img})`,
+        // minHeight: '100vh',
+        // backgroundSize: 'cover',
+        // backgroundPosition: 'right',
         paddingTop: '6em',
     },
     header: {
