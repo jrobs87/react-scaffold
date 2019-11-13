@@ -14,7 +14,7 @@ function RouteZero() {
 
   // hidden preloader div styling
   const preloader = {
-      display: 'none'
+    display: 'none'
   }
 
   return (
@@ -22,7 +22,7 @@ function RouteZero() {
       <Fade duration={222} delay={222}>
         <Container fluid={false}>
           <Row>
-            <Col lg={6}>
+            <Col lg={12}>
               <h1>Homepage</h1>
               <h3>App Entry Point</h3>
               <br />
@@ -39,7 +39,7 @@ function RouteZero() {
       </Fade>
 
       <div style={preloader}>
-        <img src={ img } alt="giraffe"></img>
+        <img src={img} alt="giraffe"></img>
       </div>
     </div>
   );

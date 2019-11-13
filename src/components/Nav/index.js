@@ -39,6 +39,7 @@ class Nav extends Component {
                             <NavLink onClick={this.toggle} className="nav-link" activeClassName="nav-link-active" to='/route-2'>Route - Two</NavLink>
                             <NavLink onClick={this.toggle} className="nav-link" activeClassName="nav-link-active" to='/route-api'>Route - API</NavLink>
                             <NavLink onClick={this.toggle} className="nav-link" activeClassName="nav-link-active" to='/notfound'>Route - 404</NavLink>
+                            <NavLink onClick={this.toggle} className="nav-link" activeClassName="nav-link-active" to='/route-rtg'>Route - RTG</NavLink>
                             <br />
                             <NavLink onClick={this.toggle} className="nav-link" activeClassName="nav-link-active" to='/route-index'>Route - Index</NavLink>
                         </nav>

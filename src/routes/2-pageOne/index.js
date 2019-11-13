@@ -11,7 +11,7 @@ function RouteOne() {
             <Fade duration={222} delay={222}>
                 <Container fluid={false}>
                     <Row>
-                        <Col lg={6}>
+                        <Col lg={12}>
                             <h1>Route One</h1>
                             <h3>1 of 2 Page Templates</h3>
                             <br />

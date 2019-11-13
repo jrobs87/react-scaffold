@@ -11,7 +11,8 @@ import RouteOne from './routes/2-pageOne';
 import RouteTwo from './routes/3-pageTwo';
 import RouteNotFound from './routes/5-page404';
 import RouteAPI from './routes/4-pageAPI';
-import RouteIndex from './routes/6-pageIndex';
+import ReactTransitionGroup from './routes/6-pageRTG';
+import RouteIndex from './routes/0-pageIndex';
 
 // Import Components.
 import Nav from './components/Nav';
@@ -35,6 +36,7 @@ const routing = (
             <Route path='/route-1' component={RouteOne} />
             <Route path='/route-2' component={RouteTwo} />
             <Route path='/route-api' component={RouteAPI} />
+            <Route path='/route-rtg' component={ReactTransitionGroup} />
             <Route path='/route-index' component={RouteIndex} />
             <Route component={RouteNotFound} />
         </Switch>

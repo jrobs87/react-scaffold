@@ -11,7 +11,7 @@ function RouteTwo() {
             <Fade duration={222} delay={222}>
                 <Container>
                     <Row>
-                        <Col lg={6}>
+                        <Col lg={12}>
                             <h1>Route Two</h1>
                             <h3>2 of 2 Page Templates</h3>
                             <br />

@@ -13,7 +13,7 @@ function RouteNotFound() {
                 <Fade duration={222} delay={222}>
                     <Container>
                         <Row>
-                            <Col lg={6}>
+                            <Col lg={12}>
                                 <h1>404 Page</h1>
                                 <h3>Route for Missing Links</h3>
                                 <br />

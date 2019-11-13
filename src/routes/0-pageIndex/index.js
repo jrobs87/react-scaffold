@@ -19,7 +19,7 @@ function RouteIndex() {
             <Fade duration={222} delay={222} >
                 <Container>
                     <Row>
-                        <Col lg={6}>
+                        <Col className="col" lg={12}>
                             <h1>App Index</h1>
                             <h3>Index of all Routes and Components</h3>
                             <br />
@@ -30,7 +30,7 @@ function RouteIndex() {
                     </Row>
                     <br />
                     <Row>
-                        <Col lg={4}>
+                        <Col className="col" lg={4}>
                             <h4>Routes (pages)</h4>
                             <ul>
                                 <li><Link to='/' exact >Route - Home</Link></li>
@@ -41,15 +41,25 @@ function RouteIndex() {
                                 <li>Route - Index</li>
                             </ul>
                         </Col>
-                        <Col lg={4}>
+                        <Col className="col" lg={4}>
                             <h4>Components</h4>
                         </Col>
-                        <Col lg={4}>
+                        <Col className="col" lg={4}>
                             <h4>Future Improvements</h4>
                             <ol>
                                 <li>Global State (React Context)</li>
                                 <li>Node / Express Server</li>
                                 <li>Splash Page / Preloader</li>
+                            </ol>
+                        </Col>
+                    </Row>
+                    <Row>
+                    <Col lg={12}>
+                            <h4>NPM Modules</h4>
+                            <ol>
+                                <li>React Router DOM - client-side routing utility</li>
+                                <li>React Transition Group - transition tool for elements entering/leaving DOM</li>
+                                <li>React Reveal - utility for simple transitions and animations on load (scroll-enabled)</li>
                             </ol>
                         </Col>
                     </Row>

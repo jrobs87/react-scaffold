@@ -5,7 +5,7 @@ Components should be placed in their own directories with stylesheets for each. 
 /* ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== = */
 
 /* Import Google Fonts here. */
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:300,400,500,700,900&display=swap');
 
 /* ----- Begin base styles for html tags ----- --- */
 
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: rgba(27, 27, 30, 0.815);
@@ -29,6 +29,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: #1B1B1E;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 6em;
+  text-transform: uppercase;
 }
 
 p {
@@ -49,6 +55,23 @@ ol {
 
 /* ===== Begin Custom Classes ===== */
 
+/* ----- Base Containers, Rows, Columns ----- */
+/* Each class corresponds to the React Components by default (Reactstrap) */
+/* .container {
+  background: blue;
+  padding: 3rem;
+}
+
+.row {
+  background: lightsteelblue;
+  padding: 1rem;
+}
+
+.col {
+  background: lightskyblue;
+  padding: 1rem;
+} */
+
 /* ----- Base button styling ----- */
 .btn {
   transition-property: all;
@@ -57,7 +80,7 @@ ol {
   border-radius: 3px;
   padding: 0.2em 1.11em;
   margin-right: 1em;
-  font-weight: 700;
+  font-weight: 500;
   background: #00A1E4;
   border: 1px solid #00A1E4;
 }
@@ -83,7 +106,7 @@ ol {
 /* ----- Generic base styling for pages (Routes) ----- */
 .page-wrapper {
   padding-top: 6em;
-  background: lightgrey;
+  background: #ffffff;
   min-height: 100vh;
 }
 
