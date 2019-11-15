@@ -16,6 +16,7 @@ import RouteIndex from './routes/0-pageIndex';
 
 // Import Components.
 import Nav from './components/Nav';
+import NavStateless from './components/NavStateless'
 
 // Import Bootstrap basic styling (additional Bootstrap themes can be integrated here).
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -29,7 +30,8 @@ const routing = (
     // Router must be the top level Component.  
     <Router>
         {/* Nav Options (insert Components here) */}
-        <Nav />
+        {/* <Nav /> */}
+        <NavStateless />
         {/* Switch is used to provide a fallback route (404 page) */}
         <Switch>
             <Route exact path='/' component={RouteZero} />
