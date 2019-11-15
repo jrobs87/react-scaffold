@@ -38,7 +38,6 @@ const routing = (
             <Route path='/route-api' component={RouteAPI} />
             <Route path='/route-rtg' component={ReactTransitionGroup} />
             <Route path='/route-index' component={RouteIndex} />
-            <Route path='/route-testing' component={NavTest} />
             <Route component={RouteNotFound} />
         </Switch>
     </Router>
