@@ -13,6 +13,7 @@ import RouteNotFound from './routes/5-page404';
 import RouteAPI from './routes/4-pageAPI';
 import ReactTransitionGroup from './routes/6-pageRTG';
 import RouteIndex from './routes/0-pageIndex';
+import NavTest from './routes/testing/NavTest';
 
 // Import Components.
 import Nav from './components/Nav';
@@ -38,6 +39,7 @@ const routing = (
             <Route path='/route-api' component={RouteAPI} />
             <Route path='/route-rtg' component={ReactTransitionGroup} />
             <Route path='/route-index' component={RouteIndex} />
+            <Route path='/route-testing' component={NavTest} />
             <Route component={RouteNotFound} />
         </Switch>
     </Router>

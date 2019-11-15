@@ -1,22 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
-import Fade from "react-reveal/Fade";
 
 // First of four page template routes.
 function RouteIndex() {
     console.log("Rendered path '/route-index' - RouteIndex.");
 
-    // const button = {
-    //     background: '#6E2594',
-    //     color: 'white',
-    //     border: '1px solid #6E2594',
-    //     marginRight: '1em'
-    // }
-
     return (
         <div className="page-wrapper">
-            <Fade duration={222} delay={222} >
                 <Container>
                     <Row>
                         <Col className="col" lg={12}>
@@ -38,6 +29,7 @@ function RouteIndex() {
                                 <li> <Link to='/route-2'>Route - Two</Link> </li>
                                 <li><Link to='/route-api'>Route - API</Link> </li>
                                 <li> <Link to='/notfound'>Route - 404</Link> </li>
+                                <li> <Link to='/route-rtg'>Route - RTG</Link> </li>
                                 <li>Route - Index</li>
                             </ul>
                         </Col>
@@ -64,7 +56,6 @@ function RouteIndex() {
                         </Col>
                     </Row>
                 </Container>
-            </Fade>
         </div>
     );
 }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Fade } from 'react-reveal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -32,7 +31,7 @@ class Nav extends Component {
                 </div>
                 <nav className={this.state.active ? "nav-container-active nav-container" : "nav-container"}>
                     <div className={this.state.active ? "nav-menu-active nav-menu" : "nav-menu"}>
-                        <div className="nav-logo">Nav Logo</div>
+                        <h1 className="nav-logo">Nav Logo</h1>
                         <nav >
                             <NavLink onClick={this.toggle} className="nav-link" activeClassName="nav-link-active" to='/' exact >Route - Home</NavLink>
                             <NavLink onClick={this.toggle} className="nav-link" activeClassName="nav-link-active" to='/route-1'>Route - One</NavLink>
@@ -46,12 +45,10 @@ class Nav extends Component {
                     </div>
                 </nav>
                 <div onClick={this.toggle}>
-                    <Fade duration={222} delay={222}>
-                        <div className={this.state.active ? "nav-icon-item-active nav-icon-item" : "nav-icon-item"}>
-                            {/* Nav Icon Placeholder */}
-                            <FontAwesomeIcon icon={faBars} />
-                        </div>
-                    </Fade>
+                    <div className={this.state.active ? "nav-icon-item-active nav-icon-item" : "nav-icon-item"}>
+                        {/* Nav Icon Placeholder */}
+                        <FontAwesomeIcon icon={faBars} />
+                    </div>
                 </div>
             </div>
         )

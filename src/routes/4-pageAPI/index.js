@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import { Link } from "react-router-dom";
-import { Fade } from 'react-reveal';
 
 class RouteAPI extends Component {
     state = {
@@ -46,7 +45,6 @@ class RouteAPI extends Component {
             // render if API response fails
             return (
                 <div className="page-wrapper">
-                    <Fade duration={333} delay={222}>
                     <Container>
                         <Row>
                             <Col>
@@ -56,7 +54,6 @@ class RouteAPI extends Component {
                             </Col>
                         </Row>
                     </Container>
-                    </Fade>
                 </div>
             )
         } else {
@@ -64,10 +61,9 @@ class RouteAPI extends Component {
             // render if API response succeeds
             return (
                 <div className="page-wrapper">
-                    <Fade duration={222} delay={222}>
                     <Container>
                         <Row>
-                            <Col>
+                            <Col lg={6}>
                                 <h1>Route API</h1>
                                 <h3>Simple API Example</h3>
                                 <br />
@@ -90,7 +86,6 @@ class RouteAPI extends Component {
                             </Col>
                         </Row>
                     </Container>
-                    </Fade>
                 </div>
             )
         }

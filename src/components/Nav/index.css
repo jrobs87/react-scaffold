@@ -1,3 +1,6 @@
+/* Import Google Fonts here. */
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Open+Sans&display=swap');
+
 .nav-icon-item {
     position: fixed;
     z-index: 500;
@@ -18,25 +21,18 @@
     background: rgba(41, 47, 54, 0.16);
 }
 
-.nav-icon-item-active {
-   opacity: 0;
-}
-
-.nav-icon-item-active:hover {
-    opacity: 0;
- }
-
 .nav-modal {
     opacity: 0;
-    background: rgba(27, 27, 30, 0.75);
+    background: rgba(27, 27, 30, 0.788);
     height: 100vh;
     width: 100%;
     position: fixed;
     right: 0;
     top: 0;
     transition-property: opacity;
-    transition-duration: 0.26s;
-    will-change: opacity;
+    transition-duration: 330ms;
+    transition-timing-function: ease;
+    /* will-change: opacity; */
     z-index: 750;
     pointer-events: none;
     text-align: center;
@@ -44,21 +40,21 @@
 }
 
 .nav-modal-active {
-    opacity: 1;
+    opacity: 0.8;
     pointer-events: all;
 }
 
 .modal-text {
     animation: rotation 45s infinite linear;
-    color: #00A1E4;
+    color: rgba(27, 27, 30, 0.863);
     font-size: 4em;
-    border: 0.02em dashed #00A1E4;
+    border: 0.02em dashed rgba(27, 27, 30, 0.89);
     width: 6em;
     height: 6em;
     border-radius: 100%;
     padding-top: 2.22em;
     margin: auto;
-    opacity: 0.85;
+    opacity: 0.75;
     font-weight: 300;
   }
 
@@ -77,15 +73,13 @@
     padding: 100px 2em; 
     width: 220px;
     position: fixed;
-    right: -220px;
+    right: -230px;
     top: 0;
     z-index: 1000;
-    text-align: center;
     will-change: transform;
     transition-property: transform;
-    transition-timing-function: cubic-bezier(.08,.62,.35,.99);
-   -moz-transition-timing-function:  cubic-bezier(.08,.62,.35,.99);
-    transition-duration: 0.33s;
+    transition-delay: 0.15;
+    transition-duration: 400ms;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -95,36 +89,28 @@
 }
 
 .nav-menu {
-    opacity: 0;
-    transition-delay: 0.28s;
-    transition-duration: 0.33s;
     left: 2em;
     position: absolute;
-    will-change: opacity;
     text-align: left;
-}
-
-.nav-menu-active {
-    opacity: 1;
 }
 
 .nav-logo {
     color: #ffffff;
     margin-bottom: 1em;
-    font-size: 2em;
+    font-size: 3rem;
 }
 
 .nav-link {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    line-height: 1.9rem;
     font-weight: 500;
     text-decoration: none;
     color: #FFFFFF;
     opacity: 0.55;
     margin: 0;
     padding: 0 !important;
-    transition-property: opacity;
-    transition-duration: 0.33s;
     display: block;
-    will-change: opacity;
 }
 
 .nav-link:hover {
@@ -134,7 +120,7 @@
 }
 
 .nav-link-active {
-    color: #00A1E4;
+    color: #FF4E00;
     opacity: 1;
   }
 

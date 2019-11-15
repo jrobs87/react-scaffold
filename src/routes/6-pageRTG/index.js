@@ -15,7 +15,7 @@ class ReactTransitionGroup extends Component {
             <div className="page-wrapper">
                 <Container>
                     <Row>
-                        <Col>
+                        <Col lg={6}>
                             <h1>React Transition Group</h1>
                         </Col>
                     </Row>
