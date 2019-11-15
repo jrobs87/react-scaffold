@@ -21,7 +21,7 @@
     right: -200px;
     top: 0;
     transition-property: transform;
-    transition-duration: 400ms;
+    transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
