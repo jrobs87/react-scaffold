@@ -24,13 +24,13 @@ function RouteIndex() {
                         <Col className="col" lg={4}>
                             <h4>Routes (pages)</h4>
                             <ul>
-                                <li><Link to='/' exact >Route - Home</Link></li>
+                                <li><Link to='/'>Route - Home</Link></li>
                                 <li><Link to='/route-1'>Route - One</Link></li>
                                 <li> <Link to='/route-2'>Route - Two</Link> </li>
                                 <li><Link to='/route-api'>Route - API</Link> </li>
                                 <li> <Link to='/notfound'>Route - 404</Link> </li>
                                 <li> <Link to='/route-rtg'>Route - RTG</Link> </li>
-                                <li>Route - Index</li>
+                                <li>Route - Index (current route)</li>
                             </ul>
                         </Col>
                         <Col className="col" lg={4}>
