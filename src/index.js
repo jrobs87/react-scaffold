@@ -15,7 +15,7 @@ import ReactTransitionGroup from './routes/6-pageRTG';
 import RouteIndex from './routes/0-pageIndex';
 
 // Import Components.
-import Nav from './components/Nav';
+// import Nav from './components/Nav';
 import NavStateless from './components/NavStateless'
 
 // Import Bootstrap basic styling (additional Bootstrap themes can be integrated here).

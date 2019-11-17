@@ -3,25 +3,20 @@ import { NavLink } from 'react-router-dom';
 import './index.css';
 
 export default class NavStateless extends Component {
-    // handleClick() {
-    //     debugger;
-    //     const wrapper = document.getElementById('wrapper');
-    //     wrapper.classList.toggle('is-nav-open');
-    //     console.log('clicked');
-    // }
 
-    handleClick = () => {
-        console.log('yeet');
-        // debugger;
+    handleClick = (e) => {
+        e.stopPropagation();
+
         const wrapper = document.getElementById('wrapper');
+        const modal = document.getElementById("nav__modal");
+
         wrapper.classList.toggle('is-nav-open');
-        console.log('clicked');
+        modal.classList.toggle('is-nav-modal-active');
     }
 
     render() {
         return (
-            <div className="wrapper">
-
+            <div>
                 <div className="nav-icon" onClick={this.handleClick}>
                     Navigation
                 </div>
@@ -38,10 +33,12 @@ export default class NavStateless extends Component {
                         <NavLink onClick={this.handleClick} className="nav-link" activeClassName="nav-link-active" to='/route-index'>Route - Index</NavLink>
                     </nav>
                 </div>
+
+                <div id="nav__modal" className="nav-modal" onClick={this.handleClick}>Modal</div>
             </div>
         )
     }
 
 
-    
+
 }
