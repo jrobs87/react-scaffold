@@ -12,11 +12,12 @@ import RouteTwo from './routes/3-pageTwo';
 import RouteNotFound from './routes/5-page404';
 import RouteAPI from './routes/4-pageAPI';
 import ReactTransitionGroup from './routes/6-pageRTG';
+import Sandbox from './routes/7-pageSandbox';
 import RouteIndex from './routes/0-pageIndex';
 
 // Import Components.
 // import Nav from './components/Nav';
-import NavStateless from './components/NavStateless'
+import SideNav from './components/SideNav'
 
 // Import Bootstrap basic styling (additional Bootstrap themes can be integrated here).
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -31,7 +32,7 @@ const routing = (
     <Router>
         {/* Nav Options (insert Components here) */}
         {/* <Nav /> */}
-        <NavStateless />
+        <SideNav />
         {/* Switch is used to provide a fallback route (404 page) */}
         <Switch>
             <Route exact path='/' component={RouteZero} />
@@ -39,6 +40,7 @@ const routing = (
             <Route path='/route-2' component={RouteTwo} />
             <Route path='/route-api' component={RouteAPI} />
             <Route path='/route-rtg' component={ReactTransitionGroup} />
+            <Route path='/route-sandbox' component={Sandbox} />
             <Route path='/route-index' component={RouteIndex} />
             <Route component={RouteNotFound} />
         </Switch>

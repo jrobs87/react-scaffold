@@ -1,0 +1,8 @@
+canvas {
+    border: #333 10px solid;
+}
+
+#myCanvas {
+    width: 550px;
+    height: 350px;
+}

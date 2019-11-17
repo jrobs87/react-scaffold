@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './index.css';
 
-export default class NavStateless extends Component {
+export default class SideNav extends Component {
 
     // Event Handler for toggling Nav visiblity.
     handleClick = (e) => {
@@ -27,7 +27,6 @@ export default class NavStateless extends Component {
                         Navigation
                     </div>
                 
-
                 <div className="nav__body" id="wrapper">
                     <nav id="nav__list" className="nav-list">
                         <NavLink onClick={this.handleClick} className="nav-link" activeClassName="nav-link-active" to='/' exact >Route - Home</NavLink>
@@ -36,12 +35,13 @@ export default class NavStateless extends Component {
                         <NavLink onClick={this.handleClick} className="nav-link" activeClassName="nav-link-active" to='/route-api'>Route - API</NavLink>
                         <NavLink onClick={this.handleClick} className="nav-link" activeClassName="nav-link-active" to='/notfound'>Route - 404</NavLink>
                         <NavLink onClick={this.handleClick} className="nav-link" activeClassName="nav-link-active" to='/route-rtg'>Route - RTG</NavLink>
+                        <NavLink onClick={this.handleClick} className="nav-link" activeClassName="nav-link-active" to='/route-sandbox'>Route - Sandbox</NavLink>
                         <br />
                         <NavLink onClick={this.handleClick} className="nav-link" activeClassName="nav-link-active" to='/route-index'>Route - Index</NavLink>
                     </nav>
                 </div>
 
-                <div id="nav__modal" className="nav-modal" onClick={this.handleClick}>Modal</div>
+                <div id="nav__modal" className="nav-modal" onClick={this.handleClick} />
             </div>
         )
     }

@@ -43,6 +43,15 @@
     pointer-events: all;
     opacity: 0.8;
     transition: 280ms;
+    cursor: pointer;
+  }
+
+  .is-nav-modal-active:hover {
+      opacity: 0.76;
+  }
+
+  .is-nav-hover {
+      opacity: 1;
   }
   /* ----- End Nav Modal ------- */
 
@@ -50,7 +59,7 @@
     background: rgba(0, 0, 0, 1);
     width: 270px;
     height: 100vh;
-    padding: 12rem 3rem;
+    padding: 8rem 3rem;
     position: fixed;
     z-index: 1000;
     right: -290px;
@@ -82,15 +91,18 @@
     transition: opacity;
     transition-duration: 500ms;
     transition-delay: 250ms;
+    transform: translate(1rem);
 }
 
 .is-nav-list-open {
     opacity: 1;
+    transform: translateX(0);
 }
 
 .nav-link {
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
+    line-height: 96%;
     font-weight: 500;
     text-decoration: none;
     color: #FFFFFF;
