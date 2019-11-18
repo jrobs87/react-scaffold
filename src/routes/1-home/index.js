@@ -16,7 +16,6 @@ function RouteZero() {
           <Col lg={6}>
             <h1>Homepage</h1>
             <h3>App Entry Point</h3>
-            <br />
             <p>Root route for the application serving as the homepage.
                 Change the Component name and config in the index.js file (found in the Router component).</p>
             <Link to='/route-index'>

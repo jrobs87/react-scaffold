@@ -10,7 +10,8 @@ export default class Sandbox extends React.Component {
                 <Container>
                     <Row>
                         <Col>
-                            <h1>Cursor Follow</h1>
+                            <h1>Sandbox</h1>
+                            <h2>Safe Space for Testing</h2>
                             <CursorFollow />
                         </Col>
                     </Row>

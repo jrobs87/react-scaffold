@@ -13,13 +13,11 @@ function RouteIndex() {
                         <Col className="col" lg={12}>
                             <h1>App Index</h1>
                             <h3>Index of all Routes and Components</h3>
-                            <br />
                             <p>Routes are equivalent to pages in client-side routing.
                             Components make up different UI elements within each Route.
                             Note that each page contains a root div with the class "page-wrapper" serving as a base class for all pages (modify in src/index.css).</p>
                         </Col>
                     </Row>
-                    <br />
                     <Row>
                         <Col className="col" lg={4}>
                             <h4>Routes (pages)</h4>
@@ -30,6 +28,7 @@ function RouteIndex() {
                                 <li><Link to='/route-api'>Route - API</Link> </li>
                                 <li> <Link to='/notfound'>Route - 404</Link> </li>
                                 <li> <Link to='/route-rtg'>Route - RTG</Link> </li>
+                                <li> <Link to='/route-sandbox'>Route - Sandbox</Link> </li>
                                 <li>Route - Index (current route)</li>
                             </ul>
                         </Col>

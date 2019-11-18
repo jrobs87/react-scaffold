@@ -1,6 +1,6 @@
 /* ===== NAV CUSTOM STYLES ===== */
 
-/* ----- Begin Nav Icon ----- */
+/* -----  Nav Icon ----- */
 .nav-icon {
     position: fixed;
     z-index: 500;
@@ -16,12 +16,12 @@
     transition: 110ms;
 }
 
+/* ----- Nav Icon > Hover ----- */
 .nav-icon:hover {
     filter: invert(0.1);
 }
-/* ----- End Nav Icon ------- */
 
-/* ----- Begin Nav Modal ----- */
+/* -----  Nav Modal ----- */
 .nav-modal {
     pointer-events: none;
     background: black;
@@ -39,22 +39,15 @@
     will-change: opacity;
 }
 
+/* -----  Nav Modal > Active ----- */
 .is-nav-modal-active {
     pointer-events: all;
     opacity: 0.8;
-    transition: 280ms;
+    /* transition: 280ms; */
     cursor: pointer;
   }
 
-  .is-nav-modal-active:hover {
-      opacity: 0.76;
-  }
-
-  .is-nav-hover {
-      opacity: 1;
-  }
-  /* ----- End Nav Modal ------- */
-
+  /* ----- Nav Body ----- */
 .nav__body {
     background: rgba(0, 0, 0, 1);
     width: 270px;
@@ -75,51 +68,67 @@
     /* opacity: 0.6; */
 }
 
+/* ----- Nav Body Active (opened) ----- */
 .is-nav-open {
     transform: translateX(-280px);
     /* opacity: 1; */
 }
 
+
+/* ----- Logo/Brand ----- */
 .nav-logo {
     color: #ffffff;
     margin-bottom: 1em;
     font-size: 3rem;
 }
 
+/* ----- Nav List Container ----- */
 .nav-list {
     opacity: 0;
-    transition: opacity;
-    transition-duration: 500ms;
-    transition-delay: 250ms;
-    transform: translate(1rem);
+    transition-property: opacity, transform;
+    transition-duration: 400ms;
+    transition-delay: 220ms;
+    transition-timing-function: ease;
+    position: relative;
+    left: 3em;
 }
 
+/* ----- Nav List Container > Active ----- */
 .is-nav-list-open {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(-3em);
 }
 
+/* ----- Nav Links ----- */
 .nav-link {
     font-family: 'Bebas Neue', cursive;
-    font-size: 2rem;
-    line-height: 96%;
+    font-size: 1.5rem;
+    line-height: 1.25em;
     font-weight: 500;
     text-decoration: none;
     color: #FFFFFF;
-    opacity: 0.55;
+    opacity: 0.6;
     margin: 0;
     padding: 0 !important;
     display: block;
 }
 
+/* ----- Nav Links > Hover ----- */
 .nav-link:hover {
     opacity: 1;
     text-decoration: none;
     color: #FFFFFF;
 }
 
+/* ----- Nav Links > Current Route ----- */
 .nav-link-active {
+    color: #00F0B5;
+    opacity: 0.6;
+  }
+
+  .nav-link-active:hover {
     color: #00F0B5;
     opacity: 1;
   }
+
 
