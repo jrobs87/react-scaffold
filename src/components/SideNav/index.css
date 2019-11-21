@@ -85,18 +85,15 @@
 /* ----- Nav List Container ----- */
 .nav-list {
     opacity: 0;
-    transition-property: opacity, transform;
-    transition-duration: 400ms;
-    transition-delay: 220ms;
-    transition-timing-function: ease;
-    position: relative;
-    left: 3em;
+    transition-property: opacity;
+    transition-duration: 300ms;
+    transition-delay: 200ms;
+    transition-timing-function: linear;
 }
 
 /* ----- Nav List Container > Active ----- */
 .is-nav-list-open {
     opacity: 1;
-    transform: translateX(-3em);
 }
 
 /* ----- Nav Links ----- */
@@ -111,6 +108,7 @@
     margin: 0;
     padding: 0 !important;
     display: block;
+    transition-duration: 300ms;
 }
 
 /* ----- Nav Links > Hover ----- */
