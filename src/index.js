@@ -17,7 +17,8 @@ import RouteIndex from './routes/0-pageIndex';
 
 // Import Components.
 // import Nav from './components/Nav';
-import SideNav from './components/SideNav'
+import SideNav from './components/SideNav';
+// import SideNavFixed from './components/SideNavFixed';
 
 // Import Bootstrap basic styling (additional Bootstrap themes can be integrated here).
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -33,6 +34,7 @@ const routing = (
         {/* Nav Options (insert Components here) */}
         {/* <Nav /> */}
         <SideNav />
+        {/* <SideNavFixed /> */}
         {/* Switch is used to provide a fallback route (404 page) */}
         <Switch>
             <Route exact path='/' component={RouteZero} />

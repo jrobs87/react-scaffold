@@ -1,0 +1,108 @@
+/* Note: Using the Fixed Side Nav will require adding padding to the body
+or offsetting the Page Wrapper class to compensate for the fixed menu */
+
+/* Begin Nav Fixed Anchor and Icon */
+.nav-side-fixed-anchor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 1000;
+    width: 90px;
+    background: black;
+    text-align: center;
+    color: white;
+}
+
+.nav-side-fixed-anchor__icon {
+    color: red;
+    position: absolute;
+    top: 1rem;
+    left: 15px;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+}
+
+.nav-side-fixed-anchor__icon:hover {
+    transform: scale(1.15);
+}
+
+/* Nav Body and Links */
+.nav-side-fixed {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 90px;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateX(90px);
+
+    transition-property: opacity, transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+
+    pointer-events: none;
+}
+
+.nav-side-fixed-is-active {
+    transform: translateX(0px);
+    opacity: 1;
+    pointer-events: all;
+
+    /* transition-property: opacity, transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease; */
+} 
+
+.nav-side-fixed__body {
+    background: none;
+    width: 600px;
+    position: absolute;
+    top: 8rem;
+    left: 3rem;
+    opacity: 0;
+}
+
+.nav-side-fixed__body-is-active {
+    opacity: 1;
+
+    /* Placing the transition on the active/animated class let's us revert to immediately hiding on close */
+    transition-property: opacity;
+    transition-delay: 300ms;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+.nav-side-fixed__list {
+    color: lime;
+}
+
+.nav-side-fixed__link {
+    border: 1px solid black;
+}
+
+.nav-side-fixed-modal {
+    background: rgba(0, 0, 0, 0.418);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 500;
+
+    height: 100vh;
+    width: 100vw;
+
+    pointer-events: none;
+
+    opacity: 0;
+    
+    transition-property: opacity;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+

@@ -1,0 +1,100 @@
+
+.overlay {
+    background: white;
+    max-width: 90vw;
+    position: absolute;
+    top: 350px;
+    left: 0;
+    height: 475px;
+    transform: translateX(-95vw);
+}
+
+.overlay-is-active {
+    transform: translateX(0vw);
+    transition-property: transform;
+    transition-duration: 400ms;
+    transition-delay: 200ms;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.sectionOne {
+    height: 600px;
+    /* background: #276fbf; */
+    background: #f25f5c;
+}
+
+.sectionTwo {
+    height: 900px;
+    background: black;
+}
+
+.header {
+    position: absolute;
+    top: 8rem;
+    left: 8rem;
+}
+
+.header {
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    transform: translateY(2rem);
+
+    opacity: 0;
+}
+
+.header-is-active {
+    transition-property: opacity, transform;
+    transition-delay: 400ms;
+    transition-duration: 900ms;
+    transform: translateY(0rem);
+    opacity: 1;
+}
+
+.headerH1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.headerH2 {
+    font-size: 2rem;
+}
+
+.overly__body {
+    opacity: 0;
+    transform: translateY(1rem);
+}
+
+.overly__body-is-active {
+    transition-property: opacity, transform;
+    transition-delay: 700ms;
+    transition-duration: 400ms;
+    transform: translateY(0rem);
+    opacity: 1;
+}
+
+.trigger {
+    margin: 2rem;
+    background: black;
+    color: white;
+    position: fixed;
+    z-index: 1000;
+    border: none;
+    transition-duration: 300ms;
+    padding: 0.5rem 1rem;
+}
+
+.sectionOneBlock {
+    position: fixed;
+    top: 0;
+    background: black;
+    height: 600px;
+    width: 100vw;
+}
+
+.sectionOneBlock-is-active {
+    transition: transform 300ms;
+    transform: translateX(100vw);
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}

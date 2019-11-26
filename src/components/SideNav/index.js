@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import './index.css';
 
 export default class SideNav extends Component {
-
     // Event Handler for toggling Nav visiblity.
     handleClick = (e) => {
         e.stopPropagation(); // prevent event bubbling (reducing script time for simple event)
@@ -19,14 +18,16 @@ export default class SideNav extends Component {
         navList.classList.toggle("is-nav-list-open");
     }
 
+    // Required Render() - only required method of a Component.
     render() {
         return (
             <div>
-                
-                    <div className="nav-icon" onClick={this.handleClick}>
-                        Navigation
+                {/* Nav Icon > Toggle Nav Visibility - bound to Toggle(). */}
+                <div className="nav-icon" onClick={this.handleClick}>
+                    Nav
                     </div>
-                
+
+                {/* Nav Body - Nav List bound to Toggle(). */}
                 <div className="nav__body" id="wrapper">
                     <nav id="nav__list" className="nav-list">
                         <NavLink onClick={this.handleClick} className="nav-link" activeClassName="nav-link-active" to='/' exact >Route - Home</NavLink>
@@ -41,11 +42,10 @@ export default class SideNav extends Component {
                     </nav>
                 </div>
 
+                {/* Nav Modal - Bound to Toggle(). */}
                 <div id="nav__modal" className="nav-modal" onClick={this.handleClick} />
+                {/* Empty by default but easily modified. */}
             </div>
         )
     }
-
-
-
 }
