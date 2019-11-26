@@ -27,13 +27,13 @@ export default class Sandbox extends React.Component {
                 <section>
                     <div className="sectionOne">
                         <div className="header" id="header">
-                            <div className="headerH1">Full Stack Development</div>
+                            <div className="headerH1">Full Stack Web</div>
                             <p>I design and code full stack baller shit.  I specialize in UI and front end work.</p>
                         </div>
                         <button className="trigger" onClick={this.load}>Load</button>
                     </div>
                     <div id="sectionOneBlock" className="sectionOneBlock">
-                        hi
+                        
                     </div>
                     <div className="sectionTwo">
 
