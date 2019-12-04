@@ -7,6 +7,7 @@
     left: 0;
     height: 475px;
     transform: translateX(-95vw);
+    transition-duration: 300ms;
 }
 
 .overlay-is-active {
@@ -61,12 +62,12 @@
     font-size: 2rem;
 }
 
-.overly__body {
+.overlay__body {
     opacity: 0;
     /* transform: translateY(1rem); */
 }
 
-.overly__body-is-active {
+.overlay__body-is-active {
     transition-property: opacity;
     transition-delay: 740ms;
     transition-duration: 1300ms;

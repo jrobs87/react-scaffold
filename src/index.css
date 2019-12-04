@@ -26,7 +26,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: rgba(27, 27, 30, 0.815);
   font-size: 14px;
-  /* padding-left: 90px; Offset for fixed Nav */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -62,23 +61,9 @@ a, a:hover {
 
 
 /* ===== Begin Custom Classes ===== */
-
-/* ----- Base Containers, Rows, Columns ----- */
-/* Each class corresponds to the React Components by default (Reactstrap) */
-/* .container {
-  background: blue;
-  padding: 3rem;
-} */
-
 .row {
-  /* background: lightsteelblue; */
   margin-bottom: 2rem;
 }
-
-/* .col {
-  background: lightskyblue;
-  padding: 1rem;
-} */
 
 /* ----- Base button styling ----- */
 .btn {

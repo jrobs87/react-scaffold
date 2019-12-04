@@ -10,16 +10,15 @@ export default class Sandbox extends React.Component {
 
     load = () => {
         const overlay = document.getElementById("overlay");
-        const overlayBody = document.getElementById("overly__body");
+        const overlayBody = document.getElementById("overlay__body");
         const header = document.getElementById("header");
         const sectionOneBlock = document.getElementById("sectionOneBlock");
         console.log(overlay);
         overlay.classList.toggle("overlay-is-active");
-        overlayBody.classList.toggle("overly__body-is-active");
+        overlayBody.classList.toggle("overlay__body-is-active");
         header.classList.toggle("header-is-active");
         sectionOneBlock.classList.toggle("sectionOneBlock-is-active")
     };
-
 
     render() {
         return (
@@ -33,13 +32,13 @@ export default class Sandbox extends React.Component {
                         <button className="trigger" onClick={this.load}>Load</button>
                     </div>
                     <div id="sectionOneBlock" className="sectionOneBlock">
-                        
+
                     </div>
                     <div className="sectionTwo">
 
                     </div>
                     <Container fluid id="overlay" className="overlay">
-                        <div id="overly__body" className="overly__body">
+                        <div id="overlay__body" className="overlay__body">
                             <Row>
                                 <Col lg={6} style={{ paddingTop: '8rem', paddingLeft: '8rem', background: 'white' }}>
                                     <div className="headerH2">
@@ -56,13 +55,13 @@ export default class Sandbox extends React.Component {
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </Col>
+                               </Col>
                                 <Col lg={6} style={{ paddingRight: '7rem', paddingLeft: '4rem', color: 'grey' }}>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </Col>
+                              </Col>
                             </Row>
                         </div>
                     </Container>
