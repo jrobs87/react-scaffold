@@ -43,19 +43,19 @@
 /* -----  Nav Modal > Active ----- */
 .is-nav-modal-active {
     pointer-events: all;
-    opacity: 0.7;
+    opacity: 0.3;
     cursor: pointer;
   }
 
   /* ----- Nav Body ----- */
 .nav__body {
     background: black;
-    width: 200px;
+    width: 300px;
     height: 100vh;
     padding: 8rem 3rem;
     position: fixed;
     z-index: 1000;
-    right: -220px;
+    right: -320px;
     top: 0;
     transition-property: transform;
     transition-duration: 300ms;
@@ -70,7 +70,7 @@
 
 /* ----- Nav Body Active (opened) ----- */
 .is-nav-open {
-    transform: translateX(-220px);
+    transform: translateX(-320px);
     transition-property: transform;
     transition-duration: 400ms;
     transition-timing-function: ease;

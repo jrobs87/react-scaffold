@@ -13,8 +13,8 @@ function RouteIndex() {
                 <Container>
                     <Row>
                         <Col className="col" lg={12}>
-                            <h1>App Index</h1>
-                            <h3>Index of all Routes and Components</h3>
+                            <h1> App Index </h1>
+                            <h3> Index of all Routes and Components </h3>
                             <p>Routes are equivalent to pages in client-side routing.
                             Components make up different UI elements within each Route.
                             Note that each page contains a root div with the class "page-wrapper" serving as a base class for all pages (modify in src/index.css).</p>
@@ -24,14 +24,14 @@ function RouteIndex() {
                         <Col className="col" lg={4}>
                             <h4>Routes (pages)</h4>
                             <ul>
-                                <li><Link to='/'>Route - Home</Link></li>
-                                <li><Link to='/route-1'>Route - One</Link></li>
+                                <li> <Link to='/'>Route - Home</Link> </li>
+                                <li> <Link to='/route-1'>Route - One</Link> </li>
                                 <li> <Link to='/route-2'>Route - Two</Link> </li>
-                                <li><Link to='/route-api'>Route - API</Link> </li>
+                                <li> <Link to='/route-api'>Route - API</Link> </li>
                                 <li> <Link to='/notfound'>Route - 404</Link> </li>
                                 <li> <Link to='/route-rtg'>Route - RTG</Link> </li>
                                 <li> <Link to='/route-sandbox'>Route - Sandbox</Link> </li>
-                                <li>Route - Index (current route)</li>
+                                <li> <Link to='/route-index'>Route - Index (you are here)</Link> </li>
                             </ul>
                         </Col>
                         <Col className="col" lg={4}>

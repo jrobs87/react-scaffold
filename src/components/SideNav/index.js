@@ -37,6 +37,7 @@ export default class SideNav extends Component {
                         <NavLink onClick={this.handleClick} className="nav-link" activeClassName="nav-link-active" to='/notfound'>Route - 404</NavLink>
                         <NavLink onClick={this.handleClick} className="nav-link" activeClassName="nav-link-active" to='/route-rtg'>Route - RTG</NavLink>
                         <NavLink onClick={this.handleClick} className="nav-link" activeClassName="nav-link-active" to='/route-sandbox'>Route - Sandbox</NavLink>
+                        <NavLink onClick={this.handleClick} className="nav-link" activeClassName="nav-link-active" to='/route-sandbox-nav'>Route - Sandbox Nav</NavLink>
                         <br />
                         <NavLink onClick={this.handleClick} className="nav-link" activeClassName="nav-link-active" to='/route-index'>Route - Index</NavLink>
                     </nav>

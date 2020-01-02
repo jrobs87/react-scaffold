@@ -21,17 +21,17 @@ html {
 }
 
 body {
-  background: #222222;
+  background: rgb(223, 223, 226);
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: rgba(142, 142, 146, 0.979);
+  color: rgba(106, 106, 109, 0.979);
   font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: rgb(223, 223, 226);
+  color:#222222;
   line-height: 0.9em;
   font-weight: 700;
   /* font-family: 'Noto Serif JP', serif; */
@@ -41,6 +41,7 @@ p {
   /* color: rgb(121, 121, 124); */
   line-height: 1.2em;
   text-align: justify;
+  font-weight: 300;
 }
 
 ul {
@@ -92,15 +93,15 @@ a, a:hover {
 .btn:hover {
   cursor: pointer;
   /* filter: invert(0.2); */
-  background: black;
-  border: 1px solid black;
+  background: #222222;
+  border: 1px solid #222222;
   color: rgb(223, 223, 226);
 }
 
 /* ----- Generic base styling for pages (Routes) ----- */
 .page-wrapper {
   padding: 8rem 1rem 6rem 1rem;
-  background: #222222;
+  background: none;
   min-height: 100vh;
   min-width: 100%;
 }
