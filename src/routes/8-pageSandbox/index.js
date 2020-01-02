@@ -58,7 +58,7 @@ export default class SandboxNav extends React.Component {
     render() {
         return (
             <div className="wrapper">
-                <Gallery photos={this.photos} direction={"column"} lightbox />
+                <Gallery photos={this.photos} lightbox />
                 <div className="nav-trigger" onClick={this.load}>
                     Click here to update state.
                 <button style={{ display: "block" }}> NAVIGATION state: {this.state.data.toString()}</button>
