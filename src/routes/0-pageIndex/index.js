@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
+import { Fade } from 'react-reveal';
 
 // First of four page template routes.
 function RouteIndex() {
@@ -8,6 +9,7 @@ function RouteIndex() {
 
     return (
         <div className="page-wrapper">
+        <Fade duration={100} delay={100}>
                 <Container>
                     <Row>
                         <Col className="col" lg={12}>
@@ -55,6 +57,7 @@ function RouteIndex() {
                         </Col>
                     </Row>
                 </Container>
+                </Fade>
         </div>
     );
 }

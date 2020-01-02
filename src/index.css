@@ -5,8 +5,7 @@ Components should be placed in their own directories with stylesheets for each. 
 /* ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== ===== = */
 
 /* Import Google Fonts here. */
-/* @import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto&display=swap'); */
-@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 /* ----- Begin base styles for html tags ----- --- */
 
 code {
@@ -16,33 +15,32 @@ code {
 
 html {
   /* set units here for future scaling with em and rem */ 
-  background: #292F36;
+  background: #222222;
   color: white;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: rgba(27, 27, 30, 0.815);
   font-size: 14px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  /* font-family: 'Bebas Neue'; */
-  font-family: 'Questrial', sans-serif;
-  color: #1B1B1E;
-  font-weight: 700;
-  line-height: 80%;
+body {
+  background: #222222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(142, 142, 146, 0.979);
+  font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
-  font-size: 4rem;
-  color: #5E239D;
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(223, 223, 226);
+  line-height: 0.9em;
+  font-weight: 700;
+  /* font-family: 'Noto Serif JP', serif; */
 }
 
 p {
-  color: #1B1B1E;
+  /* color: rgb(121, 121, 124); */
+  line-height: 1.2em;
+  text-align: justify;
 }
 
 ul {
@@ -55,14 +53,14 @@ ol {
 }
 
 a, a:hover {
-  color: #F61067;
+  color: rgb(26, 161, 240);
 }
 /* ----- End base styles for html tags ----- ----- */
 
 
 /* ===== Begin Custom Classes ===== */
 .row {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* ----- Base button styling ----- */
@@ -70,12 +68,14 @@ a, a:hover {
   transition-property: all;
   transition-duration: 110ms;
   -moz-transition-duration: 0.11s;
-  border-radius: 50px;
-  padding: 0.2em 1.11em;
+  border-radius: 0;
+  padding: 0.3em;
   margin-right: 1em;
   font-weight: 500;
-  background: black;
-  border: 1px solid black;
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  width: 8rem;
+  color: rgb(223, 223, 226);
 }
 
 /* ----- Base button focus styling ----- */
@@ -85,21 +85,22 @@ a, a:hover {
   border: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 /* ----- Base button hover styling ----- */
 .btn:hover {
   cursor: pointer;
-  filter: invert(0.2);
+  /* filter: invert(0.2); */
   background: black;
   border: 1px solid black;
+  color: rgb(223, 223, 226);
 }
 
 /* ----- Generic base styling for pages (Routes) ----- */
 .page-wrapper {
   padding: 8rem 1rem 6rem 1rem;
-  background: #ffffff;
+  background: #222222;
   min-height: 100vh;
   min-width: 100%;
 }

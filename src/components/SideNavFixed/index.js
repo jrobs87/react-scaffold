@@ -11,9 +11,13 @@ const log = function (message) {
 }
 
 export default class SideNavFixed extends React.Component {
-    // Declaring elements to modify.
-
-
+    // Set initial state of active to false
+    constructor(props) {
+        super(props);
+        this.state = {
+            active: false
+        }
+    }
 
     // Confirming the Component mounted to the DOM.
     componentDidMount() {
@@ -26,7 +30,6 @@ export default class SideNavFixed extends React.Component {
         const navList = document.getElementById("nav-side-fixed__body");
         navBody.classList.toggle("nav-side-fixed-is-active");
         navList.classList.toggle("nav-side-fixed__body-is-active");
-
     }
 
     render() {
