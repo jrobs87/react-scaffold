@@ -41,12 +41,12 @@ export default class SandboxNav extends React.Component {
                 <div className={!this.state.data ? "nav-content" : "nav-content active"}>
 
                     <div className={!this.state.data ? "nav-elements" : "nav-elements active"}>
-                        <div onClick={this.load}>fotografía</div>
-                        <p>Selected works from all projects spanning a decade of human culture.</p>
-                        <div onClick={this.load}>diario</div>
-                        <p>Musings, ramblings, and utter bullshit.</p>
-                        <div onClick={this.load}>i'MI</div>
-                        <p>Talk about how baller I am at life.</p>
+                        <div onClick={this.load}>select works</div>
+                        <p>I build for the web. A selection of curated projects, UI goodies, and neat nonsense.</p>
+                        <div onClick={this.load}>who the f*ck</div>
+                        <p>Allow me to introduce myself.  Broadcasting live from the gutter.</p>
+                        <div onClick={this.load}>get in touch</div>
+                        <p>Available for exciting digital projects in 2020.  Got a bomber idea?  Let's build it.</p>
                     </div>
                 </div>
             </div>
