@@ -1,11 +1,4 @@
 import React from 'react';
-import Gallery from 'react-photo-gallery';
-
-import img1 from '../../imgs/IMG_0180.JPG';
-import img2 from '../../imgs/IMG_0181.JPG';
-import img3 from '../../imgs/IMG_0182.JPG';
-import img4 from '../../imgs/IMG_0183.JPG';
-import img5 from '../../imgs/IMG_0184.JPG';
 
 import './index.css';
 
