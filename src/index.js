@@ -14,6 +14,7 @@ import RouteAPI from './routes/4-pageAPI';
 import ReactTransitionGroup from './routes/6-pageRTG';
 import Sandbox from './routes/7-pageSandbox';
 import SandboxNav from './routes/8-pageSandbox';
+import SandboxNavStatic from './routes/8-pageSandbox-nav-static';
 import RouteIndex from './routes/0-pageIndex';
 
 // Import Components.
@@ -43,7 +44,8 @@ const routing = (
             <Route path='/route-api' component={RouteAPI} />
             <Route path='/route-rtg' component={ReactTransitionGroup} />
             <Route path='/route-sandbox' component={Sandbox} />
-            <Route path='/route-sandbox-nav' component={SandboxNav} />
+            {/* <Route path='/route-sandbox-nav' component={SandboxNav} /> */}
+            <Route exact path='/route-sandbox-nav-static' component={SandboxNavStatic} />
             <Route path='/route-index' component={RouteIndex} />
             <Route component={RouteNotFound} />
         </Switch>

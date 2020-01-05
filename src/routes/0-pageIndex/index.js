@@ -43,6 +43,8 @@ function RouteIndex() {
                                 <li>Global State (React Context)</li>
                                 <li>Node / Express Server</li>
                                 <li>Splash Page / Preloader</li>
+                                <li>Block Reveal Component</li>
+                                <li>Slick Carousel Cmomponent</li>
                             </ol>
                         </Col>
                     </Row>
@@ -53,6 +55,7 @@ function RouteIndex() {
                                 <li>React Router DOM - client-side routing utility</li>
                                 <li>React Transition Group - transition tool for elements entering/leaving DOM</li>
                                 <li>React Reveal - utility for simple transitions and animations on load (scroll-enabled)</li>
+                                <li>React Photo Gallery - masonry grid react library.</li>
                             </ol>
                         </Col>
                     </Row>

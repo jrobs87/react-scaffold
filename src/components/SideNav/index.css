@@ -4,22 +4,23 @@
 .nav-icon {
     position: fixed;
     z-index: 500;
-    top: 2rem;
+    bottom: 2rem;
     right: 2rem;
     padding: 0.2em 0.75em 0.2em 0.75em;
     background: none;
-    color: black;
-    border: 1px solid black;
-    border-radius: 50px;
+    color: rgb(216, 35, 120);
+    border: 1px solid rgb(216, 35, 120);
+    font-size: 1.33rem;
     cursor: pointer;
     transition: 110ms;
+    font-weight: 700;
 }
 
 
 /* pink 44e5e7 */
 /* ----- Nav Icon > Hover ----- */
 .nav-icon:hover {
-    color: black;
+    color: rgb(216, 35, 120);
 }
 
 /* -----  Nav Modal ----- */
