@@ -26,7 +26,7 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: rgba(106, 106, 109, 0.979);
+  color: rgba(195, 195, 197, 0.979);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -93,7 +93,7 @@ a, a:hover {
 .btn:hover {
   cursor: pointer;
   /* filter: invert(0.2); */
-  background: #222222;
+  background: #222222;  
   border: 1px solid #222222;
   color: rgb(223, 223, 226);
 }

@@ -23,6 +23,9 @@ export default class SandboxNav extends React.Component {
     render() {
         return (
             <div className="wrapper">
+            <div className="logo">
+                tiktaalik design
+            </div>
                 {/* <Gallery photos={this.photos} lightbox /> */}
                 <div className={!this.state.data ? "nav-trigger" : "nav-trigger active"} onClick={this.load}>
                 <div className={!this.state.data ? "nav-trigger_text" : "nav-trigger_text active"}>
@@ -39,7 +42,7 @@ export default class SandboxNav extends React.Component {
                         <div onClick={this.load}>who the f*ck</div>
                         <p>Allow me to introduce myself.  Broadcasting live from the gutter.</p>
                         <div onClick={this.load}>get in touch</div>
-                        <p>Available for exciting digital projects in 2020.  Got a bomber idea?  Let's build it.</p>
+                        <p>Available for exciting digital projects in 2020.  Got a bomber project idea? <strong>Let's build it.</strong> </p>
                     </div>
                 </div>
             </div>
