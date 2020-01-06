@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Biryani:300,400,700,900&display=swap');
+
 .logo {
     position: fixed;
     left: 4rem;
@@ -12,8 +14,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    border: 1px solid rgba(245, 245, 245, 0.525);
-    color: rgba(245, 245, 245, 0.473);
+    border: 1px solid rgb(99, 98, 98);
+    color:  rgb(99, 98, 98);
     height: 5em;
     width: 5em;
     position: fixed;
@@ -22,16 +24,21 @@
     right: 2rem;
     font-weight: 500;
     cursor: pointer;
-    transition-duration: 1400ms;
+    transition-property: all;
+    transition-duration: 1000ms;
     transition-timing-function: ease;
+    opacity: 1;
     /* background-color: rgb(31, 30, 30); */
     /* transition-delay: 900ms; */
     /* transform: rotate(-180deg); */
 }
 
 .nav-trigger.active {
-    transition-duration: 800ms;
-    border: 1px solid  rgba(245, 245, 245, 0.123);
+    /* opacity: 0.5; */
+    transition-property: all;
+    transition-duration: 1200ms;
+    /* border: 1px solid rgb(197, 194, 194);
+    color: rgb(197, 194, 194); */
     transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 }
 
@@ -44,12 +51,12 @@
 
 .nav-trigger_text div {
     transition-delay: 0ms;
-    transition-duration: 600ms;
+    transition-duration: 800ms;
     transform: translateY(0em);
 }
 
 .nav-trigger_text.active div {
-    transition-duration: 1400ms;
+    transition-duration: 1000ms;
     transform: translateY(-1.45em);
     
 }
@@ -75,7 +82,7 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    background: rgb(29, 29, 29);
+    background: rgb(32, 32, 32);
     padding: 0;
     width: 100vw;
     height: 100vh;
@@ -86,7 +93,7 @@
 }
 
 .nav-content.active {
-    transition: 1200ms;
+    transition: 1000ms;
     /* opacity: 1; */
     transform: translateX(0vw);
     transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
@@ -95,71 +102,79 @@
 
 .nav-elements {
     position: absolute;
-    bottom: 0.3em;
-    left: 0.4em;
-    opacity: 0;
-    color: whitesmoke;
-    font-size: 10rem;
+    top: 20.4rem;
+    left: 1.4em;
+    opacity: 1;
+    /* color: rgb(177, 174, 174); */
+    font-size: 9rem;
     font-weight: 900;
     line-height: 0.8em;
     transition-property: transform, opacity;
-   transform: translateX(-100vw);
+   transform: translateX(-96vw);
    transition-delay: 0ms, 0ms;
    transition-duration: 800ms, 400ms;
-   transition-timing-function: cubic-bezier(0.33, 0, 0.175, 1);
+   transition-timing-function: cubic-bezier(0.33, 0, 0.175, 1), ease;
 }
 
 .nav-elements.active {
     transition-property: transform, opacity;
     transition-delay: 0ms, 0ms;
-    transition-duration: 1200ms, 1400ms;
+    transition-duration: 1000ms, 1200ms;
     transform: translateX(0vw);
     opacity: 1;
-    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1), ease;
 }
 
 .nav-elements div {
-    letter-spacing: -0.01em;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
     transform: translateX(0em);
     opacity: 0.4;
-    /* transition-duration: 300ms; */
+    color: rgb(197, 194, 194);
     cursor: pointer;
-    transition: 1200ms;
-    /* transition-timing-function: ease; */
+    transition: 1000ms;
 }
 
 .nav-elements div:hover {
     transition-duration: 0ms;
     transform: translateX(0em);
     opacity: 0.8;
-    color: rgb(245, 245, 245);
+    /* color: rgb(255, 253, 253); */
 }
 
 .nav-elements.active div {
-    transform: translateX(0);
+    transform: translateX(0em);
     /* transition-duration: 300ms; */
 }
+
 .nav-elements p {
-    opacity: 0;
-    font-size: 1.35rem;
-    /* padding-left: 0.5rem; */
-    font-weight: 500 !important;
-    line-height: 1.05em;
+    font-family: 'Biryani', sans-serif;
+    text-transform: uppercase;
+    text-align: right;
+    position: relative;
+    top:  -2em;
+    left: 10em;
+    opacity: 1;
+    font-size: 1rem;
+    letter-spacing: -0.05em;
+    font-weight: 300 !important;
+    line-height: 1.18em;
     margin: none;
-    color: #ffffff;
+    color: rgb(197, 194, 194);
     transition-property: transform, opacity;
     transition-duration: 800ms, 400ms;
     transition-timing-function: cubic-bezier(0.33, 0, 0.175, 1);
-    transform: translateX(0.6vw);
+    transform: translateX(2vw);
 }
 
 .nav-elements.active p {
     transition-property: transform, opacity;
-    transition-duration: 1200ms, 2200ms;
-    /* transition-delay: 200ms, 400ms; */
-    opacity: 0.8;
-    transform: translateX(0.6vw);
+    transform: translateX(0vw);
+    transition-duration: 1000ms, 1200ms;
+    transition-delay: 0ms, 400ms;
+    opacity: 1;
+    /* transform: translateX(0.6vw); */
     transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1), ease;
 }
 

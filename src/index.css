@@ -15,13 +15,13 @@ code {
 
 html {
   /* set units here for future scaling with em and rem */ 
-  background: #222222;
+  background: #969595;
   color: white;
   font-size: 1vw;
 }
 
 body {
-  background: rgb(223, 223, 226);
+  background: rgb(227, 227, 230);
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
