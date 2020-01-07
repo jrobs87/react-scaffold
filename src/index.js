@@ -36,6 +36,7 @@ const routing = (
     // Router must be the top level Component.  
     <Router>
         {/* Nav Options (insert Components here) */}
+        <SandboxNav />
         <SideNav />
         {/* Switch is used to provide a fallback route (404 page) */}
         <Switch>

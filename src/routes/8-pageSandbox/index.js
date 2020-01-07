@@ -23,6 +23,7 @@ export default class SandboxNav extends React.Component {
     render() {
         return (
             <div className="wrapper">
+            <div className={!this.state.data ? "nav-modal-smooth" : "nav-modal-smooth active"}></div>
             <div className="logo">
                 tiktaalik design
             </div>
@@ -35,6 +36,7 @@ export default class SandboxNav extends React.Component {
                 </div>
 
                 <div className={!this.state.data ? "nav-content" : "nav-content active"}>
+                <div className={!this.state.data ? "nav-modal-inner" : "nav-modal-inner active"}></div>
 
                     <div className={!this.state.data ? "nav-elements" : "nav-elements active"}>
                         <div onClick={this.load}>selected works</div>
