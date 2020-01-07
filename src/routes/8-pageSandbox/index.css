@@ -14,10 +14,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    border: 1px solid rgb(99, 98, 98);
-    color:  rgb(99, 98, 98);
-    height: 5em;
-    width: 5em;
+    border: 1px solid rgb(0, 0, 0);
+    color:  rgb(0, 0, 0);
+    height: 4em;
+    width: 4em;
     position: fixed;
     z-index: 2000;
     top: 2rem;
@@ -25,7 +25,7 @@
     font-weight: 500;
     cursor: pointer;
     transition-property: all;
-    transition-duration: 1000ms;
+    transition-duration: 600ms;
     transition-timing-function: ease;
     opacity: 1;
     /* background-color: rgb(31, 30, 30); */
@@ -34,34 +34,42 @@
 }
 
 .nav-trigger.active {
-    /* opacity: 0.5; */
+    opacity: 0.5;
     transition-property: all;
-    transition-duration: 1200ms;
+    transition-duration: 1100ms;
+    transition-timing-function: ease;
+    /* transition-duration: 1300ms; */
     /* border: 1px solid rgb(197, 194, 194);
     color: rgb(197, 194, 194); */
-    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+    /* transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1); */
 }
 
 .nav-trigger_text {
+    font-weight: 400;
     position: absolute;
-    height: 1.45em;
+    height: 1em;
     overflow: hidden;
     text-align: center;
+    position: relative;
+    top: -0.15em;
 }
 
 .nav-trigger_text div {
+    font-size: 0.8rem;
     transition-delay: 0ms;
-    transition-duration: 800ms;
+    transition-duration: 1200ms;
     transform: translateY(0em);
+    transition-timing-function: ease;
 }
 
 .nav-trigger_text.active div {
-    transition-duration: 1000ms;
-    transform: translateY(-1.45em);
+    transition-duration: 970ms;
+    transform: translateY(-1.88em);
     
 }
 
 .menu-open {
+    padding: 0.15em;
     opacity: 1;
 }
 
@@ -70,6 +78,7 @@
     }
 
 .menu-close {
+    padding: 0.15em;
     opacity: 0;
 }
 
@@ -82,7 +91,8 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    background: rgb(32, 32, 32);
+    opacity: 0;
+    background: rgb(241, 241, 243);
     padding: 0;
     width: 100vw;
     height: 100vh;
@@ -93,8 +103,8 @@
 }
 
 .nav-content.active {
-    transition: 1000ms;
-    /* opacity: 1; */
+    transition: 1300ms;
+    opacity: 1;
     transform: translateX(0vw);
     transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
     /* transform: rotate(90deg); */
@@ -105,8 +115,7 @@
     top: 20.4rem;
     left: 1.4em;
     opacity: 1;
-    /* color: rgb(177, 174, 174); */
-    font-size: 9rem;
+    font-size: 10rem;
     font-weight: 900;
     line-height: 0.8em;
     transition-property: transform, opacity;
@@ -118,28 +127,30 @@
 
 .nav-elements.active {
     transition-property: transform, opacity;
-    transition-delay: 0ms, 0ms;
-    transition-duration: 1000ms, 1200ms;
+    transition-delay: 0ms, 600ms;
+    transition-duration: 1300ms, 600ms;
     transform: translateX(0vw);
     opacity: 1;
-    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1), ease;
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .nav-elements div {
+    font-weight: 900;
     font-family: 'Anton', sans-serif;
     letter-spacing: -0.03em;
+    line-height: 0.6em;
     text-transform: uppercase;
     transform: translateX(0em);
-    opacity: 0.4;
-    color: rgb(197, 194, 194);
+    opacity: 0.95;
+    color: rgba(222, 221, 223, 0.89);
     cursor: pointer;
-    transition: 1000ms;
+    transition: 1300ms;
 }
 
 .nav-elements div:hover {
-    transition-duration: 0ms;
+    transition-duration: 600ms;
     transform: translateX(0em);
-    opacity: 0.8;
+    opacity: 0.55;
     /* color: rgb(255, 253, 253); */
 }
 
@@ -149,35 +160,41 @@
 }
 
 .nav-elements p {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 1em;
     font-family: 'Biryani', sans-serif;
     text-transform: uppercase;
     text-align: right;
     position: relative;
+    width: 40vw;
     top:  -2em;
-    left: 10em;
+    left: 24vw;
     opacity: 1;
-    font-size: 1rem;
-    letter-spacing: -0.05em;
-    font-weight: 300 !important;
+    font-size: 0.8rem;
+    letter-spacing: -0.03em;
+    font-weight: 500 !important;
     line-height: 1.18em;
     margin: none;
-    color: rgb(197, 194, 194);
+    color: rgb(54, 54, 54);
     transition-property: transform, opacity;
     transition-duration: 800ms, 400ms;
     transition-timing-function: cubic-bezier(0.33, 0, 0.175, 1);
     transform: translateX(2vw);
+    pointer-events: none;
 }
 
 .nav-elements.active p {
     transition-property: transform, opacity;
     transform: translateX(0vw);
-    transition-duration: 1000ms, 1200ms;
+    transition-duration: 1300ms, 1200ms;
     transition-delay: 0ms, 400ms;
     opacity: 1;
     /* transform: translateX(0.6vw); */
     transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1), ease;
 }
 
-
+.flex {
+    color: rgb(0, 0, 0);
+}
 
 

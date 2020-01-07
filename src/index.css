@@ -15,18 +15,18 @@ code {
 
 html {
   /* set units here for future scaling with em and rem */ 
-  background: #969595;
+  background: #ffffff;
   color: white;
   font-size: 1vw;
 }
 
 body {
-  background: rgb(227, 227, 230);
+  background: rgb(240, 240, 243);
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: rgba(195, 195, 197, 0.979);
+  color: rgba(17, 17, 17, 0.979);
   font-family: 'Montserrat', sans-serif;
 }
 
